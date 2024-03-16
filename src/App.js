@@ -22,4 +22,14 @@ function App() {
   );
 }
 
-export default App;
+function Hello() {
+  return (
+    <div className='Hello'>
+      <header className='Hello-header'>
+        Ted Tasman
+      </header>
+    </div>
+  )
+}
+
+export default Hello;

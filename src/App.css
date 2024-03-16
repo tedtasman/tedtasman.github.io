@@ -1,3 +1,19 @@
+.Hello {
+  text-align: center;
+  font-family: Quantico;
+}
+
+.Hello-header {
+  background-color: #f2efe6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(50px + 5vmin);
+  font-weight: bold;
+  color: #2b3b40;
+}
+
 .App {
   text-align: center;
 }
