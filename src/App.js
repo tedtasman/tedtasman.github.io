@@ -22,14 +22,18 @@ function App() {
   );
 }
 
-function Hello() {
+function Bio() {
   return (
-    <div className='Hello'>
-      <header className='Hello-header'>
+    <div className='Bio'>
+      <header className='Bio-header'>
         Ted Tasman
+        <body className='Bio-body'>
+          As a Computer Science student at Penn State, I'm deeply passionate about harnessing technology to tackle real-world challenges and create positive impacts. My journey in computer science has equipped me with a robust foundation in data structures, algorithms, and object-oriented programming. I am proficient in languages such as Python, Java, and C, which have enabled me to craft practical solutions. Beyond the academic realm, I've gained invaluable teamwork experience during my tenure in the food service industry, underscoring my commitment to being an exceptional collaborator. I'm driven by the belief that technology can drive transformative change, and I'm eager to explore opportunities where I can apply my skills and passion to make a meaningful difference.
+        </body>
       </header>
+      
     </div>
   )
 }
 
-export default Hello;
+export default Bio;
