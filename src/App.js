@@ -7,6 +7,7 @@ export default function Homepage() {
         <div className='element column'>
           <Bio />
         </div>
+        <Bio />
         <div className='element column'>
           <Shelf />
         </div>
