@@ -13,10 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-and-move": "npm run build && rsync -av --delete --exclude='.git' build/ --exclude='README.md' ../portfolio-build/ && rm -rf build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
