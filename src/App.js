@@ -63,9 +63,9 @@ function Drawer({ value }) {
 function Shelf() {
   return (
     <div className='Shelf'>
-      <Drawer value="One" />
-      <Drawer value="Two" />
-      <Drawer value="Three" />
+      <Drawer value="Under Construction" />
+      <Drawer value="Under Construction" />
+      <Drawer value="Under Construction" />
     </div>
   );
 }
