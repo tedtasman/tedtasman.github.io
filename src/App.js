@@ -24,7 +24,16 @@ function App() {
 
 export default function Homepage() {
   return (
-    <Bio />
+    <>
+      <div className='Landing-container'>
+        <div className='element column'>
+          <Bio />
+        </div>
+        <div className='element column'>
+          <Shelf />
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -41,8 +50,22 @@ function Bio() {
   )
 }
 
-function Drawer(value) {
-  <div className='Drawer'>
-    value;
-  </div>
+function Drawer({ value }) {
+  return (
+    <p>
+      <div className='Drawer'>
+        {value}
+      </div>
+    </p>
+  );
+}
+
+function Shelf() {
+  return (
+    <div className='Shelf'>
+      <Drawer value="One" />
+      <Drawer value="Two" />
+      <Drawer value="Three" />
+    </div>
+  );
 }

@@ -6,31 +6,60 @@
 h1 {
   font-size: calc(50px + 5vmin);
   font-weight: bold;
-  color: #2b3b40;
+  color: #ffffff;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 1% 5%;
+  text-shadow: #395558bd 0 0 1vmin;
 }
 
 p {
   font-size: calc(10px + 1.5vmin);
   text-align: justify;
-  color: #5b7076;
+  color: #434343;
   font-family: Arial, Helvetica, sans-serif;
   margin: 1% 5%;
 }
 
 .Bio {
-  max-width: 50vw;
-  background-image: linear-gradient(#fff, #d1cbbc);
+  width: 50vw;
+  background-image: linear-gradient(-30deg, #cfc8a3 10%, #dedede, #bacfd2 90%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-sizing: border-box;
-  text-align: left;
 }
 
 .Drawer {
-  text-align: right;
+  text-align: center;
+  background-color: #35322a;
+  color: #fff;
+  box-shadow: #25231e 1px 1px 10px 5px;
+  padding: 5%;
+  margin: 5%;
+}
+
+.element.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Landing-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Shelf {
+  width: 50vw;
+  background-image: linear-gradient(#302e26, #524e42);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: #000 1vw 0 1vw -1vw inset;
 }
