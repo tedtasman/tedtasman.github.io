@@ -18,7 +18,7 @@
     "build": "npm-run-all build:react move:build commit:github",
     "build:react": "react-scripts build",
     "move:build": "rm -rf docs/* && cp -R build/* docs/",
-    "commit:github": "git add . && git commit -m 'Update build files' && git push origin main"
+    "commit:github": "git add docs && git commit -m 'Update build files' && git push origin main"
   },
   "eslintConfig": {
     "extends": [
