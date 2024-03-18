@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && find docs ! -name CNAME -delete && mv build/* docs && rm -rf build",
+    "build": "react-scripts build && find docs ! -name CNAME -delete && mv build/* docs && rm -rf build && git add docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
