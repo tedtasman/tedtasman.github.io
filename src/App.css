@@ -13,12 +13,26 @@ h1 {
   text-shadow: #395558bd 0 0 1vmin;
 }
 
+h2 {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(15px + 1.5vmin);
+  margin: 10%;
+  color: #fff;
+  text-align: left;
+}
+
 p {
   font-size: calc(10px + 1.5vmin);
   text-align: justify;
   color: #434343;
   font-family: Arial, Helvetica, sans-serif;
   margin: 1% 10%;
+}
+
+button {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Bio {
@@ -31,12 +45,15 @@ p {
 }
 
 .Drawer {
-  text-align: center;
+  display: inline-flex;
+  justify-content: left;
   background-color: #35322a;
-  color: #fff;
   box-shadow: #25231e 1px 1px 10px 5px;
-  padding: 5%;
-  margin: 5%;
+  width: 100%;
+  margin: 3% 0;
+  position: relative;
+  border-radius: 1vmin;
+  white-space: pre-line;
 }
 
 .element.column {
@@ -62,4 +79,40 @@ p {
   flex-direction: column;
   justify-content: center;
   box-shadow: #000 1vw 0 1vw -1vw inset;
+}
+
+.Drawer-button {
+  margin: 0;
+  padding: 10%;
+  width: 100%;
+  background-color: #0000;
+  z-index: 1;
+  color: inherit;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(15px + 1.5vmin);
+  color: #fff;
+  text-align: left;
+}
+
+.Drawer-back-button {
+  left: 5px;
+  top: 5px;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #00000034;
+  z-index: 1;
+  font: inherit;
+  position: absolute;
+  color: inherit;
+  border-radius: 1vmin;
+  color: #dfdfdf;
+  font-size: calc(5px + 1vmin);
+}
+
+.Drawer-content {
+  font: inherit;
+  margin: 5%;
+  color: #dfdfdf;
+  text-align: left;
 }

@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import './App.css';
+import texts from './content/texts.json';
 
 export default function Homepage() {
   return (
@@ -16,34 +18,78 @@ export default function Homepage() {
 }
 
 function Bio() {
+
   return (
     <div className='Bio'>
-      <h1>
-        Ted Tasman
-      </h1>
-      <p>
-          As a Computer Science student at Penn State, I'm deeply passionate about harnessing technology to tackle real-world challenges and create positive impacts. My journey in computer science has equipped me with a robust foundation in data structures, algorithms, and object-oriented programming. I am proficient in languages such as Python, Java, and C, which have enabled me to craft practical solutions. Beyond the academic realm, I've gained invaluable teamwork experience during my tenure in the food service industry, underscoring my commitment to being an exceptional collaborator. I'm driven by the belief that technology can drive transformative change, and I'm eager to explore opportunities where I can apply my skills and passion to make a meaningful difference.
-      </p>
+      <h1>{texts.bio.name}</h1>
+      <p>{texts.bio.body}</p>   
     </div>
   )
 }
 
-function Drawer({ value }) {
+function Drawer({ title, content, isOpen, onToggle, onClose }) {
+
   return (
     <p>
-      <div className='Drawer'>
-        {value}
+      <div className='Drawer' >
+        {isOpen ? (
+          <div>
+            <button className='Drawer-back-button' onClick={onClose}>Back</button>
+            <h2>{title}</h2>
+            <div className='Drawer-content'>{content}</div>
+          </div>
+        ) : (
+          <button className='Drawer-button' onClick={onToggle}>{title}</button>
+        )}
       </div>
     </p>
   );
 }
 
 function Shelf() {
+
+  const [drawers, setDrawers] = useState([
+    { index: 1, title: texts.drawer1.title, content: texts.drawer1.body, isOpen: false },
+    { index: 2, title: texts.drawer2.title, content: texts.drawer2.body, isOpen: false },
+    { index: 3, title: texts.drawer3.title, content: texts.drawer3.body, isOpen: false }
+  ]);
+
+  const [openDrawerID, setOpenDrawerId] = useState(null);
+
+  // handle clicking on any drawer
+  const handleDrawerToggle = (index) => {
+    setOpenDrawerId(index === openDrawerID ? null : index);
+  }
+
+  // handle closing drawers
+  const handleDrawerClose = () => {
+    // check through drawers
+    const updatedDrawers = drawers.map(drawer => ({
+
+      ...drawer, // copy drawer objects
+      // if current drawer was clicked -> close, else -> close
+      isOpen: drawer.index === openDrawerID ? false : drawer.isOpen
+    }));
+
+    setDrawers(updatedDrawers);
+    setOpenDrawerId(null);
+  };
+
   return (
     <div className='Shelf'>
-      <Drawer value="Under Construction" />
-      <Drawer value="Under Construction" />
-      <Drawer value="Under Construction" />
+      {drawers.map((drawer) => (
+        <div key={drawer.index}>
+          {openDrawerID !== null && openDrawerID !== drawer.index ? null : (
+            <Drawer 
+              title={drawer.title}
+              content={drawer.content}
+              isOpen={drawer.index === openDrawerID}
+              onToggle={() => handleDrawerToggle(drawer.index)}
+              onClose={handleDrawerClose}
+            />
+          )}
+        </div>
+      ))}
     </div>
   );
 }
