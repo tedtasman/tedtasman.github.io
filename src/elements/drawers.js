@@ -4,19 +4,17 @@ import texts from '../content/texts.json';
 export function Drawer({ title, content, isOpen, onToggle, onClose }) {
 
     return (
-        <p>
         <div className='Drawer' >
             {isOpen ? (
             <div>
                 <button className='Drawer-back-button' onClick={onClose}>Back</button>
-                <h2>{title}</h2>
+                <h2 className='Drawer-title'>{title}</h2>
                 <div className='Drawer-content'>{content}</div>
             </div>
             ) : (
             <button className='Drawer-button' onClick={onToggle}>{title}</button>
             )}
         </div>
-        </p>
     );
 }
   

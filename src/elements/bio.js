@@ -4,8 +4,8 @@ export function Bio() {
 
     return (
       <div className='Bio'>
-        <h1>{texts.bio.name}</h1>
-        <p>{texts.bio.body}</p>   
+        <h1 className='Name'>{texts.bio.name}</h1>
+        <p className='Bio-content'> {texts.bio.body}</p>   
       </div>
     )
   }
