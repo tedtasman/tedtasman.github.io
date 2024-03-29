@@ -1,25 +1,32 @@
+.Construction-banner {
+  background-image: linear-gradient(90deg, #ff000000 0%, #ff0000aa 15%, #ff0000aa 85%, #ff000000 100%);
+  text-align: center;
+  padding: 1em 100px;
+  font-family: monospace;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-size: calc(40px + 5vmin);
+  font-size: calc(15px + 4vmin);
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: normal;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: calc(15px + 1.5vmin);
-  margin: 1em;
 }
 
 p {
-  font-size: calc(10px + 1.5vmin);
-  text-align: justify;
+  font-size: calc(10px + 0.75vmin);
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 button {
@@ -28,28 +35,103 @@ button {
   cursor: pointer;
 }
 
+.Landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-image: url(./content/landing-image.jpeg);
+  min-height: 100vh;
+  background-size: cover;
+}
+
 .Header {
-  height: 10vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  background-color: #000;
-  padding-left: 2vw;
+  justify-content: space-between;
+  align-items: end;
+  font-size: calc(15px + 1.5vmin);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 1vh;
 }
 
 .Home-button {
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: calc(15px + 1.5vmin);
+  font-size: inherit;
   background-color: transparent;
-  color: white;
+  color: inherit;
+  font-family: inherit;
+  font-size: calc(15px + 1vmin);
+  width: 20vw;
+  text-align: left;
+  margin-left: 4vw;
 }
 
-.Landing-container {
+.Tab-button {
+  background-color: transparent;
+  font-size: calc(10px + 1vmin);
+  color: inherit;
+  margin: 0 2em;
+  font-family: inherit;
+  text-shadow: inherit;
+}
+
+.Links-button {
+  font-weight: bold;
+  background-color: transparent;
+  height: calc(15px + 1.5vmin);
+  width: calc(15px + 1.5vmin);
+  color: inherit;
+  font-family: inherit;
+  text-shadow: inherit;
+  text-align: right;
+  margin-right: 4vw;
+  background-image: url(./content/links.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Left-header {
+  width: 20vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+
+.Right-header {
+  width: 20vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Header-bar {
+  height: 1px;
+  width: 90%;
+  background: linear-gradient(90deg, transparent 0%, white 5%, white 95%, transparent 100%);
+  margin-top: 2vh;
+}
+
+.Home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.Welcome {
+  max-width: 30vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  background-color: #00000088;
+  border-radius: 10px;
+  white-space: pre-line;
+  gap: 1vh;
 }
 
 .Element-column {
@@ -63,24 +145,23 @@ button {
 
 .Shelf {
   width: 50vw;
-  background-image: linear-gradient(#302e26, #524e42);
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: #000 1vw 0 1vw -1vw inset;
+  align-items: end;
+  margin: 4vw;
+  gap: 4vw;
 }
 
 .Drawer {
   display: inline-flex;
   justify-content: left;
-  background-color: #35322a;
-  box-shadow: #25231e 1px 1px 10px 5px;
-  width: 40vw;
-  margin: 3% 10%;
+  background-color: #00000088;
+  max-width: 30vw;
   position: relative;
-  border-radius: 1vmin;
+  border-radius: 10px;
   white-space: pre-line;
+
 }
 
 .Bio {
@@ -90,18 +171,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.Name {
-  margin: 1% 5%;
-  text-shadow: #395558bd 0 0 1vmin;
-  color: white;
-  text-align: center;
-}
-
-.Bio-content {
-  margin: 1% 10%;
-  color: #434343;
 }
 
 .Drawer-button {
@@ -154,5 +223,5 @@ button {
   align-items: center;
   background-color: #000;
   color: white;
-  padding-left: 2vw;
+  padding-left: 4vw;
 }

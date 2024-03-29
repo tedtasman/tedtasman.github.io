@@ -1,12 +1,12 @@
 {
     "bio": {
         "name":"Ted Tasman",
-        "body":"As a Computer Science student at Penn State, I'm deeply passionate about harnessing technology to tackle real-world challenges and create positive impacts. My journey in computer science has equipped me with a robust foundation in data structures, algorithms, and object-oriented programming. I am proficient in languages such as Python, Java, and C, which have enabled me to craft practical solutions. Beyond the academic realm, I've gained invaluable teamwork experience during my tenure in the food service industry, underscoring my commitment to being an exceptional collaborator. I'm driven by the belief that technology can drive transformative change, and I'm eager to explore opportunities where I can apply my skills and passion to make a meaningful difference. Let's connect and embark on this exciting journey together."
+        "body":"- Computer Science student at Penn State University\n- Minoring in Computer Engineering\n- Experience in Python, C, Java, JavaScript, and more"
     },
 
     "drawer1": {
         "title":"Java Course Scheduling Application",
-        "body":"- Developed a java application for scheduling classes for a hypothetical college.\nDesigned and implemented a SQL database to efficiently store and retrieve data.\n- Utilized complex SQL queries such as joins, subqueries, and aggregate functions to perform complex data manipulation.\n- Leveraged object-oriented programming practices in the construction and implementation of many admin and student functions.\n- Implemented a functional GUI using Java Swing with event handling mechanisms, enabling interactivity in various components."
+        "body":"- Developed a java application for scheduling classes for a hypothetical college.\n- Designed and implemented a SQL database to efficiently store and retrieve data.\n- Utilized complex SQL queries such as joins, subqueries, and aggregate functions to perform complex data manipulation.\n- Leveraged object-oriented programming practices in the construction and implementation of many admin and student functions.\n- Implemented a functional GUI using Java Swing with event handling mechanisms, enabling interactivity in various components."
     },
 
     "drawer2": {

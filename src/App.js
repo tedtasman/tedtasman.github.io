@@ -3,16 +3,15 @@ import { Bio } from './elements/bio';
 import { Shelf } from './elements/drawers';
 import { Footer } from './elements/footer';
 import { Header } from './elements/header';
+import { Welcome } from './elements/welcome';
 
 export default function Homepage() {
   return (
     <>
-      <Header />
       <div className='Landing-container'>
-        <div className='Element-column'>
-          <Bio />
-        </div>
-        <div className='Element-column'>
+        <Header />
+        <div className='Home-container'>
+          <Welcome />
           <Shelf />
         </div>
       </div>
