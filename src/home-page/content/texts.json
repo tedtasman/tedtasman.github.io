@@ -1,0 +1,21 @@
+{
+    "bio": {
+        "name":"Ted Tasman",
+        "body":"- Computer Science student at Penn State University\n- Minoring in Computer Engineering\n- Experience in Python, C, Java, JavaScript, and more"
+    },
+
+    "drawer1": {
+        "title":"Java Course Scheduling Application",
+        "body":"- Developed a java application for scheduling classes for a hypothetical college.\n- Designed and implemented a SQL database to efficiently store and retrieve data.\n- Utilized complex SQL queries such as joins, subqueries, and aggregate functions to perform complex data manipulation.\n- Leveraged object-oriented programming practices in the construction and implementation of many admin and student functions.\n- Implemented a functional GUI using Java Swing with event handling mechanisms, enabling interactivity in various components."
+    },
+
+    "drawer2": {
+        "title":"Python Postfix Calculator Program",
+        "body":"- Designed and wrote a Python program which parses and solves systems of equations.\n- Utilized a stack data structure to manage the postfix conversion process to enable evaluation.\n- Logically computed the postfix expressions, navigating complexities such as implicit multiplication and operator precedence.\n- Implemented support for complex systems of equations by solving for variables through substitution."
+    },
+
+    "drawer3": {
+        "title":"C Spellcheck Program With Hash Algorithm",
+        "body":"- Employed skills in data structures, algorithms, and pointers to apply efficient spell checking in this C-based spell check program.\n- Utilized I/O functions to load a dictionary file into memory.\n- Employed a hash table data structure to optimize retrieval of words with minimal time complexity when parsing through input.\n- Applied different hash algorithms to improve and optimize the program’s performance."
+    }
+}

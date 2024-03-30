@@ -1,0 +1,17 @@
+{
+    "site": {
+        "title": "ttasman.com",
+        "subtitle": "Portfolio website built with React",
+        "body": "This site was built to serve as a portfolio for showcasing my various coding projects. In addition, I used its creation as a chance to hone my skills in web development. Although probably not necessary, I chose to build the site using React to gain valuable experience in web development that can translate to the real world. In creating this site, I've greatly advanced my skills in JavaScript, HTML, CSS, and have gained a strong understanding of the web development process."
+    },
+    "jbod": {
+        "title": "JBOD Controller",
+        "subtitle": "MDADM implementation written in C",
+        "body": "This program implements MDADM functionality for a virtual JBOD. Over the duration of a semester, I incrementally added various features to enable reading and writing to the JBOD. Primarily, the program uses logic to enable seemless reading and writing to and from the JBOD, including across multiple disks. The virtual JBOD operates with the constraint that only a full block can be written or read at once, so complex logic was needed to ensure proper functionality. Additionally, a cache was added to improve performance. The cache is implemented with an LRU algorithm enabling a balance of size and performance. So far, this project has given me a strong foundation in low-level systems programming in C."
+    },
+    "scheduler": {
+        "title": "Course Scheduler",
+        "subtitle": "Java application for course scheduling",
+        "body": "Built in Java, this application serves as a course scheduling program for a hypothetical college. A SQL database was used to store data on semesters, classes, students, and student enrollment. The admin page allows users to create new semesters, add courses, add sections of courses, and manage students. In the student page, users can enroll in classes and see their schedules. SQL statements are used in the implementation of these features, efficiently accessing entries from the database. This project gave me experience using and managing SQL databases and with Java Swing GUIs."
+    }
+}

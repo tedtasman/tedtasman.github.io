@@ -1,21 +1,15 @@
-import './App.css';
-import { Bio } from './elements/bio';
-import { Shelf } from './elements/drawers';
-import { Footer } from './elements/footer';
-import { Header } from './elements/header';
-import { Welcome } from './elements/welcome';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './home-page/homepage';
+import Projects from './projects-page/projects'
 
-export default function Homepage() {
+
+export default function App() {
   return (
-    <>
-      <div className='Landing-container'>
-        <Header />
-        <div className='Home-container'>
-          <Welcome />
-          <Shelf />
-        </div>
-      </div>
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   );
 }
