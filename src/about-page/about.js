@@ -1,3 +1,4 @@
+import { Footer } from "../footer";
 import { Header } from "../header";
 import './about.modules.css'
 
@@ -13,6 +14,7 @@ export default function About() {
                     <h1><i class="fa-solid fa-chevron-down fa-xl"></i></h1>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }
