@@ -1,11 +1,11 @@
 import { Header } from '../header';
 import './projects.modules.css';
-import sitePhoto from './content/sitePhoto.png';
+import sitePhoto from './content/sitePhoto.jpg';
 import projects from './content/projects.json';
 import github from '../content/github.png';
-import scheduler from './content/scheduler.png'
+import scheduler from './content/scheduler.jpg'
 import { Footer } from '../footer';
-import { Welcome } from '../home-page/welcome';
+import jbodCode from './content/jbodCode.jpeg'
 
 
 export default function Projects() {
@@ -40,7 +40,7 @@ export default function Projects() {
                     <p>{projects.jbod.body}</p>
                     <div className='AI-disclaimer'>Due to academic integrity policies, specifics of this project's implementation cannot be shared publicly.</div>
                 </div>
-                <img src={scheduler} alt='Website code' className='Project-image'/>
+                <img src={jbodCode} alt='Website code' className='Project-image'/>
             </div>
             <div className='Project-container'>
                 <img src={scheduler} alt='Website code' className='Project-image'/>

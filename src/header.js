@@ -16,9 +16,9 @@ export function Header() {
                     <div className='Left-header'>
                         <PagesButton className={'Home-button'} title={texts.bio.name} page={'/'} />
                     </div>
-                    <div style={{display: 'flex', alignItems: 'center'}}>
-                        <PagesButton className={'Tab-button'} title={'About Me'} page={'/'}/>
-                        <PagesButton className={'Tab-button'} title={'Work Experience'} page={'/'}/>
+                    <div style={{display: 'flex', alignItems: 'center', gap: '2em'}}>
+                        <PagesButton className={'Tab-button'} title={'About Me'} page={'/about'}/>
+                        <PagesButton className={'Tab-button'} title={'Experience'} page={'/experience'}/>
                         <PagesButton className={'Tab-button'} title={'Projects'} page={'/projects'}/>
                     </div>
                     <div className='Right-header'>
@@ -27,7 +27,7 @@ export function Header() {
                 </div>
                 <div className='Header-bar'></div>
             </div>
-            <div className='Construction-banner'>This site is under construction. Some buttons may not be functional.</div>
+            <div className='Construction-banner'>This site is under construction. Some pages may be incomplete.</div>
         </div>
     );
 }

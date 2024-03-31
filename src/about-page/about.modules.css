@@ -1,0 +1,10 @@
+.About-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-image: url(./content/aboutlanding.jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

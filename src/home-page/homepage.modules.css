@@ -80,9 +80,15 @@ button {
   background-color: transparent;
   font-size: calc(10px + 1vmin);
   color: white;
-  margin: 0 2em;
   font-family: inherit;
   text-shadow: inherit;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  transition: background-color 0.3s;
+}
+
+.Tab-button:hover {
+  background-color: #ffffff22;
 }
 
 .Links-container {
@@ -280,4 +286,10 @@ button {
   font-size: calc(5px + 1vmin);
   font-weight: normal;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Footer-button:hover {
+  color: #fff;
+  text-decoration: underline;
 }
