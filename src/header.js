@@ -10,7 +10,7 @@ export function Header() {
     
     return (
         <div style={{display: 'flex', flexDirection: 'column', alignItems: "center"}}>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: "center", justifyContent: "space-between", height: "7vh"}}>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: "center", justifyContent: "space-between", height: "7vh", backgroundImage: "linear-gradient(#00000088 0%, #00000011 75%, transparent 100%)"}}>
                 <div style={{height: '0px'}}></div>
                 <div className='Header'>
                     <div className='Left-header'>
