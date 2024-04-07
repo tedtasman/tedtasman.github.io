@@ -1,0 +1,15 @@
+.Header {
+    height: 8vh;
+    width: 100vw;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    transition: height 0.3s, background-color 0.1s;
+}
+
+.Header.expanded {
+    height: 30vh;
+    background-color: white;
+}
