@@ -1,4 +1,4 @@
-import { Header } from "../header";
+import { Header } from "../header2";
 import './experience.modules.css'
 import experience from './content/experience.json'
 import { Footer } from "../footer";
@@ -11,9 +11,10 @@ import sju from "./content/sju.jpg"
 export default function Experience() {
 
     return (
-        <>
+        <>   
+            <Header />
             <div className='Experience-landing'>
-                <Header />
+                
                 <div className='Experience-title'>
                     <h1>Experience</h1>
                     <h2>My technical and non-technical work experience</h2>

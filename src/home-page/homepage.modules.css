@@ -64,32 +64,11 @@ button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Home-button {
-  font-weight: bold;
-  font-size: inherit;
-  background-color: transparent;
-  color: white;
-  font-family: inherit;
-  font-size: calc(15px + 1vmin);
-  width: 20vw;
-  text-align: left;
-  margin-left: 4vw;
-}
 
-.Tab-button {
-  background-color: transparent;
-  font-size: calc(10px + 1vmin);
-  color: white;
-  font-family: inherit;
-  text-shadow: inherit;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  transition: background-color 0.3s;
-}
 
-.Tab-button:hover {
-  background-color: #ffffff22;
-}
+
+
+
 
 .Links-container {
   display: flex;
@@ -128,18 +107,7 @@ button {
   max-width: calc(60px + 6vmin);
 }
 
-.Left-header {
-  width: 20vw;
-  display: flex;
-  flex-direction: row;
-}
 
-.Right-header {
-  width: 20vw;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
 
 .Header-bar {
   height: 1px;

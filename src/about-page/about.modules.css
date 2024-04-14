@@ -1,7 +1,7 @@
 .About-landing {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
     background-image: url(./content/aboutlanding.jpeg);
     min-height: 100vh;

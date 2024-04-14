@@ -1,7 +1,7 @@
 .Experience-landing {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
     background-image: url(./content/experiencelanding.jpg);
     min-height: 100vh;
@@ -19,7 +19,7 @@
     border-radius: 10px;
     white-space: pre-line;
     gap: 1vh;
-    margin: 0 0 10vw 4vw;
+    margin: 0 0 4vw 4vw;
     box-shadow: 0 0 20px 20px #00000055;
     background-color: #00000055;
 }

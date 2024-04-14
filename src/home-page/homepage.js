@@ -1,5 +1,4 @@
 import './homepage.modules.css';
-import { Shelf } from './drawers';
 import { Footer } from '../footer';
 import { Header } from '../header2';
 import { Welcome } from './welcome';

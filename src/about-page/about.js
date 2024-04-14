@@ -1,13 +1,13 @@
 import { Footer } from "../footer";
-import { Header } from "../header";
+import { Header } from "../header2";
 import './about.modules.css'
 
 export default function About() {
 
     return (
         <>
+            <Header />
             <div className='About-landing'>
-                <Header />
                 <div className='Page-title'>
                     <h1>About Me</h1>
                     <h2>Insight into my interests, motivations, and goals</h2>

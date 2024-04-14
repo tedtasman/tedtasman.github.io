@@ -1,4 +1,4 @@
-import { Header } from '../header';
+import { Header } from '../header2';
 import './projects.modules.css';
 import sitePhoto from './content/sitePhoto.jpg';
 import projects from './content/projects.json';
@@ -11,8 +11,8 @@ import jbodCode from './content/jbodCode.jpeg'
 export default function Projects() {
     return(
         <>
+            <Header />
             <div className='Projects-landing'>
-                <Header />
                 <div className='Page-title'>
                     <h1>Projects</h1>
                     <h2>A catalog of completed and ongoing projects</h2>
