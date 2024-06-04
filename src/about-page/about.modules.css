@@ -9,33 +9,58 @@
     background-position: center;
 }
 
-.About-core {
-    display: flex;
-    flex-direction: column;
-    margin: 5vmin 30vmin;
-    background-color: #FFFFFF33;
-    color: white;
-    border-radius: 2vmin;
-    padding: 5vmin;
-    transition: transform 0.8s;
-    text-align: justify;
-    gap: 2em;
-}
 
-.About-core:hover {
-    transform: scale(1.1);
-}
 
 .About-background {
     background: radial-gradient(circle, rgba(2,28,102,1) 0%, rgba(40,85,144,1) 49%, rgb(96, 191, 235) 100%);
-    padding: 1vmin;
     display: flex;
     flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    padding: 10vh 0;
 
+}
+
+.About-core {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2vw 0 2vw 17vw;
+    background-color: #FFFFFF33;
+    color: white;
+    border-radius: inherit;
+    padding: 3vw;
+    transition: transform 0.5s;
+    text-align: justify;
+    width: 30vw;
+    border-radius: 2vmin;
+    gap: 2vh;
+}
+
+.About-core p {
+    font-size: 90%;
+}
+
+.About-core:hover {
+    transform: scale(1.02);
 }
 
 .About-photo-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 2vw 17vw 2vw 0;
+    border-radius: 2vmin;
+}
 
+.About-photo-container img {
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: inherit;
+    gap: 2vw;
+    max-height: calc((80vh - 24vh)/3);
+}
+
+.About-photo-container img:hover {
+    transform: scale(1.07);
 }

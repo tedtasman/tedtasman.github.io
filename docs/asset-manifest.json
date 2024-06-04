@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.2949eb06.css",
-    "main.js": "/static/js/main.67712964.js",
+    "main.css": "/static/css/main.98f3e940.css",
+    "main.js": "/static/js/main.29d488b9.js",
     "static/js/488.4065c291.chunk.js": "/static/js/488.4065c291.chunk.js",
     "static/media/landing-image.jpeg": "/static/media/landing-image.3aae3e8ed63b99825b53.jpeg",
+    "static/media/bike.jpeg": "/static/media/bike.e2649b7ac9b06e3b19c4.jpeg",
+    "static/media/guitar.jpeg": "/static/media/guitar.9a850ab560ebc1591c5d.jpeg",
+    "static/media/benji.jpg": "/static/media/benji.c5df376d6304ea2f8c0c.jpg",
     "static/media/projectslanding.jpeg": "/static/media/projectslanding.5c5911c3a842bb6d4d4a.jpeg",
     "static/media/aboutlanding.jpeg": "/static/media/aboutlanding.c21e3ba1e1f23e3628f5.jpeg",
     "static/media/experiencelanding.jpg": "/static/media/experiencelanding.bc431df4dfcd00999249.jpg",
@@ -18,12 +21,12 @@
     "static/media/sju.jpg": "/static/media/sju.4235d5f5099ff3feebb9.jpg",
     "static/media/dominos.png": "/static/media/dominos.c22c66320b651a2fe6bb.png",
     "index.html": "/index.html",
-    "main.2949eb06.css.map": "/static/css/main.2949eb06.css.map",
-    "main.67712964.js.map": "/static/js/main.67712964.js.map",
+    "main.98f3e940.css.map": "/static/css/main.98f3e940.css.map",
+    "main.29d488b9.js.map": "/static/js/main.29d488b9.js.map",
     "488.4065c291.chunk.js.map": "/static/js/488.4065c291.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2949eb06.css",
-    "static/js/main.67712964.js"
+    "static/css/main.98f3e940.css",
+    "static/js/main.29d488b9.js"
   ]
 }

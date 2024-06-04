@@ -11,6 +11,12 @@
     overflow: hidden;
 }
 
+.Rounded-bottom {
+    height: 10vh;
+    background-color: black;
+    position: fixed;
+}
+
 .Header.expanded {
     height: 30vh;
 }
