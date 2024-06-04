@@ -7,7 +7,7 @@
     "jbod": {
         "title": "JBOD Controller",
         "subtitle": "MDADM implementation written in C",
-        "body": "This program implements MDADM functionality for a virtual JBOD. Over the duration of a semester, I incrementally added various features to enable reading and writing to the JBOD. Primarily, the program uses logic to enable seemless reading and writing to and from the JBOD, including across multiple disks. The virtual JBOD operates with the constraint that only a full block can be written or read at once, so complex logic was needed to ensure proper functionality. Additionally, a cache was added to improve performance. The cache is implemented with an LRU algorithm enabling a balance of size and performance. So far, this project has given me a strong foundation in low-level systems programming in C."
+        "body": "This program implements MDADM functionality for a virtual JBOD. Over the duration of a semester, I incrementally added various features to enable reading and writing to the JBOD. Primarily, the program uses logic to enable seemless reading and writing to and from the JBOD, including across multiple disks. The virtual JBOD operates with the constraint that only a full block can be written or read at once, so complex logic was needed to ensure proper functionality. Additionally, a cache was added to improve performance. The cache is implemented with an LRU algorithm enabling a balance of size and performance. Finally, networking functionality was added to enable reading and writing without a physical connection to the JBOD. This project has given me a strong foundation in low-level systems programming in C."
     },
     "scheduler": {
         "title": "Course Scheduler",

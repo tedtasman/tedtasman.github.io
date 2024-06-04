@@ -22,7 +22,7 @@ export default function About() {
                 </div>
                 <div className="About-background">
                     <div className="About-core">
-                        <h2 style={{fontWeight: 'bold'}}>{about.title}</h2>
+                        <h2 style={{fontWeight: 'bold', textAlign: 'start'}}>{about.title}</h2>
                         <p>{about.introduction}</p>
                         <p>{about.personal_experiences}</p>
                         <p>{about.interests}</p>

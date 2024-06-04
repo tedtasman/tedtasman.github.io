@@ -21,48 +21,50 @@ export default function Experience() {
                     <h1><i class="fa-solid fa-chevron-down fa-xl"></i></h1>
                 </div>
             </div>
-            <div className="Experience-container">
-                <img src={psu} alt='Penn State University Logo' className='Experience-image'/>
-                <div className="Experience-description">
-                    <h1>{experience.grader.title}</h1>
-                    <h2>{experience.grader.subtitle}</h2>
-                    <p>{experience.grader.body}</p>
+            <div className="Experience-core">
+                <div className="Experience-container">
+                    <img src={psu} alt='Penn State University Logo' className='Experience-image'/>
+                    <div className="Experience-description">
+                        <h1>{experience.grader.title}</h1>
+                        <h2>{experience.grader.subtitle}</h2>
+                        <p>{experience.grader.body}</p>
+                    </div>
                 </div>
-            </div>
-            <div className="Experience-divider"></div>
-            <div className="Experience-container">
-                <img src={dominos} alt="Domino's Pizza Logo" className='Experience-image'/>
-                <div className="Experience-description">
-                    <h1>{experience.dominos.title}</h1>
-                    <h2>{experience.dominos.subtitle}</h2>
-                    <p>{experience.dominos.body}</p>
+                <div className="Experience-divider"></div>
+                <div className="Experience-container">
+                    <img src={dominos} alt="Domino's Pizza Logo" className='Experience-image'/>
+                    <div className="Experience-description">
+                        <h1>{experience.dominos.title}</h1>
+                        <h2>{experience.dominos.subtitle}</h2>
+                        <p>{experience.dominos.body}</p>
+                    </div>
                 </div>
-            </div>
-            <div className="Experience-divider"></div>
-            <div className="Experience-container">
-                <img src={sju} alt="St. Joseph's University Logo" className='Experience-image'/>
-                <div className="Experience-description">
-                    <h1>{experience.sjp.title}</h1>
-                    <h2>{experience.sjp.subtitle}</h2>
-                    <p>{experience.sjp.body}</p>
+                <div className="Experience-divider"></div>
+                <div className="Experience-container">
+                    <img src={sju} alt="St. Joseph's University Logo" className='Experience-image'/>
+                    <div className="Experience-description">
+                        <h1>{experience.sjp.title}</h1>
+                        <h2>{experience.sjp.subtitle}</h2>
+                        <p>{experience.sjp.body}</p>
+                    </div>
                 </div>
-            </div>
-            <div className="Experience-divider"></div>
-            <div className="Experience-container">
-                <img src={ihb} alt='Iron Hill Brewery Logo' className='Experience-image'/>
-                <div className="Experience-description">
-                    <h1>{experience.ihb.title}</h1>
-                    <h2>{experience.ihb.subtitle}</h2>
-                    <p>{experience.ihb.body}</p>
+                <div className="Experience-divider"></div>
+                <div className="Experience-container">
+                    <img src={ihb} alt='Iron Hill Brewery Logo' className='Experience-image'/>
+                    <div className="Experience-description">
+                        <h1>{experience.ihb.title}</h1>
+                        <h2>{experience.ihb.subtitle}</h2>
+                        <p>{experience.ihb.body}</p>
+                    </div>
                 </div>
-            </div>
-            <div className="Experience-divider"></div>
-            <div className="Experience-container">
-                <img src={counselor} alt="St. Thomas Logo" className='Experience-image'/>
-                <div className="Experience-description">
-                    <h1>{experience.counselor.title}</h1>
-                    <h2>{experience.counselor.subtitle}</h2>
-                    <p>{experience.counselor.body}</p>
+                <div className="Experience-divider"></div>
+                <div className="Experience-container">
+                    <img src={counselor} alt="St. Thomas Logo" className='Experience-image'/>
+                    <div className="Experience-description">
+                        <h1>{experience.counselor.title}</h1>
+                        <h2>{experience.counselor.subtitle}</h2>
+                        <p>{experience.counselor.body}</p>
+                    </div>
                 </div>
             </div>
             <Footer />

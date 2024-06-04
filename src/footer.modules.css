@@ -1,0 +1,44 @@
+.Footer {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background-color: #000;
+    color: #dddddd;
+    padding: 0vw 20vw 20vh 20vw;
+    font-size: calc(10px + 1vmin);
+  }
+  
+  .Footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60vw;
+    margin: 5vmin;
+    font-family: monospace;
+  }
+  
+  .Footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.5em;
+    font-weight: bold;
+  }
+  
+  .Footer-button {
+    background-color: transparent;
+    color: #bbbbbb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(5px + 1vmin);
+    font-weight: normal;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .Footer-button:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  

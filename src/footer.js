@@ -1,3 +1,4 @@
+import './footer.modules.css'
 import { Link } from 'react-router-dom';
 
 export function Footer() {
@@ -5,7 +6,7 @@ export function Footer() {
     return (
         <div className="Footer">
             <div className='Footer-container'>
-                Site built by Theodore Tasman using React.
+                site built by theodore tasman in react.js
             </div>
             <div className='Header-bar' style={{color:'#bbbbbb'}}></div>
             <div className="Footer-container">

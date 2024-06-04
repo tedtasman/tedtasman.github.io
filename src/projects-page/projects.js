@@ -36,7 +36,6 @@ export default function Projects() {
                 <div className='Project-description-inv'>
                     <h1>{projects.jbod.title}</h1>
                     <h2>{projects.jbod.subtitle}</h2>
-                    <div className='Development-banner'>under active development</div>
                     <p>{projects.jbod.body}</p>
                     <div className='AI-disclaimer'>Due to academic integrity policies, specifics of this project's implementation cannot be shared publicly.</div>
                 </div>
