@@ -6,6 +6,8 @@ import github from '../content/github.png';
 import scheduler from './content/scheduler.jpg'
 import { Footer } from '../footer';
 import jbodCode from './content/jbodCode.jpeg'
+import joeBoard from './content/joePhoto.jpg'
+import { Link } from 'react-router-dom';
 
 
 export default function Projects() {
@@ -18,6 +20,25 @@ export default function Projects() {
                     <h2>A catalog of completed and ongoing projects</h2>
                     <h1><i class="fa-solid fa-chevron-down fa-xl"></i></h1>
                 </div>
+            </div>
+            <div className='Project-container'>
+                <div className='Project-description-inv'>
+                    <h1>{projects.joe.title}</h1>
+                    <h2>{projects.joe.subtitle}</h2>
+                    <div>
+                        <span className='Coauthor-tag'>Co-Authored With </span>
+                        <a href='https://www.linkedin.com/in/benjamin-rodgers-aa9464293/' className='Coauthor-link'>Benjamin Rodgers</a>
+                    </div>
+                    <p>{projects.joe.body}</p>
+                    <div className='Buttons'>
+                        <Link to='/site' className='See-more-inv'>See more</Link>
+                        <a href='https://github.com/tedtasman/tic-tac-joe' className='Github-link'>
+                            <img src={github} alt='GitHub' style={{maxHeight: '1.5em'}}/>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <img src={joeBoard} alt='Website Home Page' className='Project-image'/>
             </div>
             <div className='Project-container'>
                 <img src={sitePhoto} alt='Website Home Page' className='Project-image'/>

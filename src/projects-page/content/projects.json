@@ -1,4 +1,9 @@
 {
+    "joe": {
+        "title": "Tic-Tac-Joe",
+        "subtitle": "Exploring Machine Learning Through Tic-Tac-Toe",
+        "body": "In this project, we developed an AI-driven Tic-Tac-Toe game to explore and apply machine learning concepts using TensorFlow. Our objective was to implement a neural network capable of learning and improving its gameplay strategies through iterative training. We started with a deep-learning model featuring three hidden layers, later optimizing it to a simpler architecture with one 15-neuron hidden layer to mitigate overfitting and enhance performance. The training process involved a combination of Q-learning and backpropagation, allowing the model to refine its strategies by playing against a \"smart-random\" opponent. Additionally, we designed a graphical user interface (GUI) to provide an intuitive and interactive user experience. The project not only solidified our understanding of machine learning principles but also demonstrated the potential of AI in game-based learning environments. The results showed significant improvement in the AI's performance, underscoring the effectiveness of our approach and paving the way for future, more complex machine learning endeavors."
+    },
     "site": {
         "title": "ttasman.com",
         "subtitle": "Portfolio website built with React",
