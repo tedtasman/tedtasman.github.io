@@ -31,7 +31,7 @@ export default function Projects() {
                     </div>
                     <p>{projects.joe.body}</p>
                     <div className='Buttons'>
-                        <Link to='/site' className='See-more-inv'>See more</Link>
+                        {/*<Link to='/site' className='See-more-inv'>See more</Link>*/}
                         <a href='https://github.com/tedtasman/tic-tac-joe' className='Github-link'>
                             <img src={github} alt='GitHub' style={{maxHeight: '1.5em'}}/>
                             View on GitHub

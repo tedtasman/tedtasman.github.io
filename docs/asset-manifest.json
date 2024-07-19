@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.995dc5f7.css",
-    "main.js": "/static/js/main.f0901892.js",
+    "main.css": "/static/css/main.579c1634.css",
+    "main.js": "/static/js/main.c11a3a75.js",
     "static/js/488.4065c291.chunk.js": "/static/js/488.4065c291.chunk.js",
     "static/media/landing-image.jpeg": "/static/media/landing-image.3aae3e8ed63b99825b53.jpeg",
     "static/media/bike.jpeg": "/static/media/bike.e2649b7ac9b06e3b19c4.jpeg",
@@ -11,6 +11,7 @@
     "static/media/aboutlanding.jpeg": "/static/media/aboutlanding.c21e3ba1e1f23e3628f5.jpeg",
     "static/media/experiencelanding.jpg": "/static/media/experiencelanding.bc431df4dfcd00999249.jpg",
     "static/media/sitePhoto.jpg": "/static/media/sitePhoto.5163bac2b7cb697e01d5.jpg",
+    "static/media/joePhoto.jpg": "/static/media/joePhoto.cc6cdaac731dde76d627.jpg",
     "static/media/jbodCode.jpeg": "/static/media/jbodCode.0130dfc031bf3db6398b.jpeg",
     "static/media/scheduler.jpg": "/static/media/scheduler.733d6e4f9070fff084fe.jpg",
     "static/media/psu.png": "/static/media/psu.835d382b93105132c72a.png",
@@ -21,12 +22,12 @@
     "static/media/sju.jpg": "/static/media/sju.4235d5f5099ff3feebb9.jpg",
     "static/media/dominos.png": "/static/media/dominos.c22c66320b651a2fe6bb.png",
     "index.html": "/index.html",
-    "main.995dc5f7.css.map": "/static/css/main.995dc5f7.css.map",
-    "main.f0901892.js.map": "/static/js/main.f0901892.js.map",
+    "main.579c1634.css.map": "/static/css/main.579c1634.css.map",
+    "main.c11a3a75.js.map": "/static/js/main.c11a3a75.js.map",
     "488.4065c291.chunk.js.map": "/static/js/488.4065c291.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.995dc5f7.css",
-    "static/js/main.f0901892.js"
+    "static/css/main.579c1634.css",
+    "static/js/main.c11a3a75.js"
   ]
 }
