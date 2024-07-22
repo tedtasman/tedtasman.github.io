@@ -1,0 +1,51 @@
+.Header-bg {
+    background-color: var(--primary);
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s;
+    color: var(--background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Header-bg.expanded {
+    height: 5vh;
+    padding: 0.2em 1em;
+}
+
+.Title {
+    width: 20vw;
+}
+
+.Page-buttons {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+}
+
+.Page-buttons button {
+    width: auto;
+    background-color: transparent;
+    color: var(--background);
+    transition: all 0.2s
+}
+
+.Contact-div {
+    width: 20vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Contact-div button {
+    background-color: transparent;
+    color: var(--background);
+    transition: all 0.2s
+}
+
+.Contact-div button:hover, .Page-buttons button:hover {
+    background-color: var(--backgroundFade);
+}

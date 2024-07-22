@@ -1,0 +1,75 @@
+.Homepage-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5vw 15vw;
+    gap: 1em
+}
+
+.Homepage-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: start;
+}
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 30vw;
+}
+
+.Landing-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.Guide-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em
+}
+
+.Guide {
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0;
+}
+
+.Guide.a {background-color: var(--primaryFade);}
+
+.Guide.b {
+    background-color: var(--accentFade);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.Guide.b li {
+    list-style-type: none;
+}
+
+.List-title {
+    font-weight: bold;
+}
+
+.Guide.c {background-color: var(--secondaryFade);}
+
+.Post-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    gap: 1em
+}
+
+.Post-square {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.Post-square.a {background-color: var(--primary);}
+.Post-square.b {background-color: var(--accent);}
+.Post-square.c {background-color: var(--secondary);}
