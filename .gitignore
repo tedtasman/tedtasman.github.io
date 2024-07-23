@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 portfolio.code-workspace
+
+.env
+
+/backend/node_modules
