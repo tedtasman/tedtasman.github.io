@@ -5,6 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
+const cors = require('cors');
+
+app.use(cors());
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
@@ -12,7 +15,22 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
     res.send('Welcome to the server!');
-  });
+});
+
+app.get('/posts', (req, res) => {
+    console.log('Received request for posts');
+    db.query(
+        'SELECT * FROM posts ORDER BY created_at DESC LIMIT 3',
+        (error, results) => {
+            if (error) {
+                console.error(error);
+                res.status(500).send('Failed to fetch posts');
+            } else {
+                res.status(200).json(results);
+            }
+        }
+    );
+});
 
 // Ensure uploads directory exists
 const uploadsDir = path.join(__dirname, 'uploads');
@@ -33,6 +51,8 @@ const storage = multer.diskStorage({
 const upload = multer({ 
     storage: storage
 });
+
+app.use('/uploads', express.static('uploads'));
 
 // Middleware to parse JSON bodies
 app.use(express.json());

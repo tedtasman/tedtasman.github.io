@@ -21,10 +21,10 @@
 
 .Page-buttons {
     width: 50vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 1em;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .Page-buttons button {
@@ -47,5 +47,7 @@
 }
 
 .Contact-div button:hover, .Page-buttons button:hover {
-    background-color: var(--backgroundFade);
+    background-color: var(--secondary);
+    color: var(--text);
+    box-shadow: 0 0 3em 0 var(--secondary);
 }

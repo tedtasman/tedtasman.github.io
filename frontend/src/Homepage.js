@@ -1,5 +1,6 @@
 import './App.css';
 import './Homepage.css'
+import { Posts } from './Posts'
 import landingImage from './content/landing-image.jpeg'
 
 export function Homepage() {
@@ -16,16 +17,16 @@ export function Homepage() {
                         My mission is to provide tangible value to users through innovative and practical solutions.
                     </p>
                 </div>
-                <img src={landingImage} alt='Photo of me' className='Landing-image'/>
+                
                 <h3>
                         What's in store?
                 </h3>
                 <div className='Guide-wrapper'>
-                    <p className='Guide a'>
+                    <p className='guide1'>
                         The purpose of this site is to provide insight into my skills and experiences,
                         as well as on me as a person.
                     </p>
-                    <ul className='Guide b'>
+                    <ul className='guide2'>
                         <li><div className='List-title'>About me - </div>
                         Learn more about my background, interests, and the journey that has shaped my aspirations in the tech industry.
                         </li>
@@ -36,25 +37,13 @@ export function Homepage() {
                         Explore my completed works, from software applications to collaborative projects, demonstrating my problem-solving abilities and technical expertise.
                         </li>
                     </ul>
-                    <p className='Guide c'>
+                    <p className='guide3'>
                         When you're done exploring, use the "Contact" button at the top right to get in touch and embark on our exciting journey together!
                     </p>
                 </div>
+                <img src={landingImage} alt='Photo of me' className='Landing-image'/>
             </div>
-            <div className='Homepage-column'>
-                <h3>Highlighted Posts:</h3>
-                <div className='Post-grid'>
-                    <div className='Post-square a'>
-                        
-                    </div>
-                    <div className='Post-square b'>
-
-                    </div>
-                    <div className='Post-square c'>
-
-                    </div>
-                </div>
-            </div>
+            <Posts />
         </div>
     )
 }

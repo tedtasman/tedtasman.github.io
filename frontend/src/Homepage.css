@@ -1,15 +1,17 @@
 .Homepage-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 5vw 15vw;
-    gap: 1em
+    grid-template-columns: 7fr 2fr;
+    padding: 4vh 15vw;
+    gap: 10em;
+    box-shadow: 0 0 1em 0 var(--text) inset;
+    border-radius: 1em;
 }
 
 .Homepage-column {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
     justify-content: start;
+    max-height: 100%;
 }
 
 .Intro {
@@ -17,6 +19,13 @@
     flex-direction: column;
     gap: 1em;
     max-width: 30vw;
+    margin-bottom: 5em;
+    text-align: left;
+}
+
+.Intro p {
+    text-align: justify;
+    margin: 0;
 }
 
 .Landing-image {
@@ -26,28 +35,49 @@
 }
 
 .Guide-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1em
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "guide1 guide2 guide2"
+        "guide3 guide2 guide2";
+    gap: 1em;
+    height: 100%;
+    margin-bottom: 6em;
+    margin-top: 1em;
 }
 
-.Guide {
-    padding: 1em;
+.guide1, .guide2, .guide3 {
+    padding: 2em 3em;
     border-radius: 1em;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    text-align: justify;
 }
 
-.Guide.a {background-color: var(--primaryFade);}
+.guide1 {
+    background-color: var(--text);
+    grid-area: guide1;
+    color: var(--background);
+}
 
-.Guide.b {
-    background-color: var(--accentFade);
+.guide2 {
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    grid-area: guide2;
+    color: var(--background);
+    align-items: start;
+    justify-content: center;
 }
 
-.Guide.b li {
+.guide2 li {
     list-style-type: none;
 }
 
@@ -55,21 +85,54 @@
     font-weight: bold;
 }
 
-.Guide.c {background-color: var(--secondaryFade);}
+.guide3 {
+    background-color: var(--secondary);
+    grid-area: guide3;
+}
 
 .Post-grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
-    gap: 1em
+    gap: 2em;
+    margin-top: 2em
 }
 
 .Post-square {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 1em;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+    justify-content: space-between;
+    transition: all 0.2s;
+    border-color: black;
+    border-width: 1em;
+    cursor: pointer;
 }
 
-.Post-square.a {background-color: var(--primary);}
-.Post-square.b {background-color: var(--accent);}
-.Post-square.c {background-color: var(--secondary);}
+.Post-square:hover {
+    background-color: var(--accent);
+    transform: scale(1.02);
+    box-shadow: 0 0 3em 0.5em var(--accent);
+}
+
+.Post-square .image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.Post-square .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
