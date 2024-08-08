@@ -4,10 +4,10 @@
   --primary: #0f267b;
   --secondary: #77daaf;
   --accent: #5fc4dd;
-  --backgroundFade: rgba(255, 250, 229, 0.3);
-  --primaryFade: rgba(15, 38, 123, 0.2);
-  --secondaryFade: rgba(119, 218, 175, 0.3);
-  --accentFade: rgba(95, 196, 221, 0.3);
+  --backgroundFade: rgba(255, 250, 229, 0.1);
+  --primaryFade: rgba(15, 38, 123, 0.1);
+  --secondaryFade: rgba(119, 218, 175, 0.1);
+  --accentFade: rgba(95, 196, 221, 0.1);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Urbanist:700|Urbanist:500');

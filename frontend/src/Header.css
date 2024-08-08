@@ -51,3 +51,8 @@
     color: var(--text);
     box-shadow: 0 0 3em 0 var(--secondary);
 }
+
+a {
+    text-decoration: none;
+    color: var(--background);
+}

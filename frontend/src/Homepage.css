@@ -5,6 +5,10 @@
     gap: 10em;
     box-shadow: 0 0 1em 0 var(--text) inset;
     border-radius: 1em;
+    background-color: var(--background);
+    min-height: 75vh;
+    width: 99%;
+    box-sizing: border-box;
 }
 
 .Homepage-column {
