@@ -18,6 +18,11 @@
     height: 100vh;
 }
 
+.Welcome h1 {
+    display: inline-block;
+    width: fit-content;
+}
+
 .Welcome h4 {
     color: var(--secondary);
 }
@@ -72,4 +77,12 @@
     width: 99%;
     border-radius: 1em;
     display: flex;
+    min-height: 25vh;
+}
+
+@media (max-width: 1200px) {
+    .Welcome {
+        text-align: left;
+        padding: 2em;
+    }
 }

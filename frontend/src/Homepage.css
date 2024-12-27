@@ -1,8 +1,8 @@
 .Homepage-wrapper {
     display: grid;
-    grid-template-columns: 7fr 2fr;
-    padding: 4vh 15vw;
-    gap: 10em;
+    grid-template-columns: 7fr 3fr;
+    padding: 12vh 12vw;
+    gap: 7em;
     box-shadow: 0 0 1em 0 var(--text) inset;
     border-radius: 1em;
 }
@@ -12,6 +12,10 @@
     flex-direction: column;
     justify-content: start;
     max-height: 100%;
+}
+
+.Homepage-column h3 {
+    margin: 0;
 }
 
 .Intro {
@@ -48,7 +52,7 @@
 }
 
 .guide1, .guide2, .guide3 {
-    padding: 2em 3em;
+    padding: 2em 2em;
     border-radius: 1em;
     margin: 0;
     width: 100%;
@@ -135,4 +139,46 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.Post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.Post-content p {
+    margin: 0;
+}
+
+.Post-content span {
+    color: var(--textFade);
+}
+
+
+@media (max-width: 1200px) {
+
+    .Homepage-wrapper {
+        grid-template-columns: 7fr 4fr;
+        padding: 4vh 4vw;
+        gap: 3em;
+    }
+
+    .Guide-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .Homepage-wrapper {
+        grid-template-columns: 1fr;
+        padding: 4vh 4vw;
+        gap: 3em;
+    }
+
+    .Intro {
+        max-width: 100%;
+    }
 }

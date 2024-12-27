@@ -11,12 +11,16 @@
 }
 
 .Header-bg.expanded {
-    height: 5vh;
+    height: 7.5vh;
     padding: 0.2em 1em;
 }
 
 .Title {
     width: 20vw;
+    font-size: 2.369rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--background);
 }
 
 .Page-buttons {
@@ -50,4 +54,41 @@
     background-color: var(--secondary);
     color: var(--text);
     box-shadow: 0 0 3em 0 var(--secondary);
+}
+
+@media (max-width: 1200px) {
+    .Title {
+        font-size: 1.777rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .Header-bg.expanded {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Title {
+        font-size: 1.333rem;
+    }
+
+    .Page-buttons {
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        gap: 0.5em;
+        padding: 0.5em 1.5em;
+    }
+
+    .Page-buttons button {
+        padding: 0.5em 1em;
+    }
+
+    .Contact-div {
+        display: none;
+    }
 }
