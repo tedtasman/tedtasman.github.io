@@ -80,6 +80,8 @@
     min-height: 25vh;
 }
 
+
+
 @media (max-width: 1200px) {
     .Welcome {
         text-align: left;
