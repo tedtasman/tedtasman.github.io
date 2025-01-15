@@ -1,8 +1,12 @@
-import './App.js'
+import './App.js';
 import { Header } from './PageHeader';
 import { Footer } from './PageFooter';
-import placeHolderImage from './content/landing-image.jpeg'
-import './About.css'
+import yellowstoneMe from './content/yellowStoneMe.jpeg';
+import zion from './content/zion.jpeg';
+import lizardRock from './content/lizardRock.jpeg';
+import oregon from './content/oregon.jpeg';
+import yosemite from './content/yosemite.jpeg';
+import './About.css';
 
 export function About() {
     return (
@@ -18,23 +22,44 @@ export function About() {
                                 </p>
                             </div>
                             <div>
-                                <img src={placeHolderImage} alt='Photo of me'/>
+                                <img src={yellowstoneMe} alt='Photo of me'/>
+                                <small>Yellowstone National Park, Wyoming</small>
                             </div>
                         </div>
                         <div className='Content-entry-b'>
                             <div>
-                                <img src={placeHolderImage} alt='Photo of me'/>
+                                <img src={zion} alt='Photo of me'/>
+                                <small>Zion National Park, Utah</small>
                             </div>
                             <div>
-                            Beyond the technical skills, I value the experiences that have shaped who I am today. Working in the food service industry taught me the importance of teamwork and communication, skills that are just as crucial in tech as they are in any other field. These experiences have underscored my commitment to collaboration and my ability to thrive in dynamic environments.
+                                Beyond the technical skills, I value the experiences that have shaped who I am today. Working in the food service industry taught me the importance of teamwork and communication, skills that are just as crucial in tech as they are in any other field. These experiences have underscored my commitment to collaboration and my ability to thrive in dynamic environments.
                             </div>
                         </div>
                         <div className='Content-entry-a'>
                             <div>
-                            I'm a firm believer in the transformative power of technology and am eager to apply my skills to projects that can drive meaningful change. Whether it’s through an internship, a collaborative project, or just connecting with like-minded individuals, I’m excited about the opportunities ahead.
+                                I'm a firm believer in the transformative power of technology and am eager to apply my skills to projects that can drive meaningful change. Whether it’s through an internship, a collaborative project, or just connecting with like-minded individuals, I’m excited about the opportunities ahead.
                             </div>
                             <div>
-                                <img src={placeHolderImage} alt='Photo of me'/>
+                                <img src={lizardRock} alt='Photo of me'/>
+                                <small>Joshua Tree National Park, California</small>
+                            </div>
+                        </div>
+                        <div className='Content-entry-b'>
+                            <div>
+                                <img src={oregon} alt='Photo of me'/>
+                                <small>Somewhere in Oregon</small>
+                            </div>
+                            <div>
+                                Beyond the technical skills, I value the experiences that have shaped who I am today. Working in the food service industry taught me the importance of teamwork and communication, skills that are just as crucial in tech as they are in any other field. These experiences have underscored my commitment to collaboration and my ability to thrive in dynamic environments.
+                            </div>
+                        </div>
+                        <div className='Content-entry-a'>
+                            <div>
+                                I'm a firm believer in the transformative power of technology and am eager to apply my skills to projects that can drive meaningful change. Whether it’s through an internship, a collaborative project, or just connecting with like-minded individuals, I’m excited about the opportunities ahead.
+                            </div>
+                            <div>
+                                <img src={yosemite} alt='Photo of me'/>
+                                <small>Yosemite National Park, California</small>
                             </div>
                         </div>
                     </div>
