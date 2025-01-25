@@ -1,0 +1,98 @@
+.Experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3em;
+    padding: 12vh 12vw;
+}
+
+.Job-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.Job-entry img {
+    height: 4em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+.Job-role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.Experience-category {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-height: fit-content;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s, margin-bottom 0.1s linear;
+    margin-bottom: 0;
+}
+
+.Experience-category.expanded {
+    max-height: 1000px;
+    margin-bottom: 7em;
+}
+
+.Experience-category-header {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+}
+
+.Experience-category-header button {
+    background-color: transparent;
+    padding: 0;
+}
+
+.Experience-category-header-arrow {
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+    transform: rotate(90deg);
+    transition: all 0.2s;
+}
+
+.Experience-category-header-arrow.expanded {
+    transform: rotate(270deg);
+}
+
+@media (max-width: 1000px) {
+    .Experience-wrapper {
+        padding: 4vh 4vw;
+        width: 100%;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .Experience-category-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .Job-entry {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .Job-entry img {
+        height: 6em;
+        width: 6em;
+    }
+
+    .Experience-category.expanded {
+        max-height: 1500px;
+    }
+}
+
