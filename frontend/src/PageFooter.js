@@ -6,22 +6,32 @@ export function Footer({ className }) {
         <div className={className}>
             <div className='Footer-buttons'>
                 <div className='Page-category'>
-                    <button><h5>About Me</h5></button>
-                    <button>Skills</button>
-                    <button>Interests</button>
-                    <button>Documents</button>
+                    <a href='/'> 
+                        <button>
+                            <h5>Home</h5>
+                        </button>
+                    </a>
                 </div>
                 <div className='Page-category'>
-                    <button><h5>Experience</h5></button>
-                    <button>Technical Work</button>
-                    <button>Extracurriculars</button>
-                    <button>Non-Technical Work</button>
+                    <a href='/about'> 
+                        <button>
+                            <h5>About Me</h5>
+                        </button>
+                    </a>
                 </div>
                 <div className='Page-category'>
-                    <button><h5>Projects</h5></button>
-                    <button>Back-End</button>
-                    <button>Front-End</button>
-                    <button>Machine Learning</button>
+                    <a href='/experience'> 
+                        <button>
+                            <h5>Experience</h5>
+                        </button>
+                    </a>
+                </div>
+                <div className='Page-category'>
+                    <a href='/projects'> 
+                        <button>
+                            <h5>Projects</h5>
+                        </button>
+                    </a>
                 </div>
             </div>
             <p>Built by Theodore Tasman in React.js</p>

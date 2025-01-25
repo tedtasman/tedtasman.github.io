@@ -11,6 +11,13 @@
     flex-direction: row;
     gap: 2em;
     align-items: flex-end;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1em;
+    background-color: transparent;
+    text-align: justify;
+    box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
+    border-radius: 1.5em;
 }
 
 .Project img {
@@ -58,6 +65,15 @@
     align-items: center;
 }
 
+.Project-Detail a {
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.Project-Detail a:hover {
+    transform: scale(1.1);
+}
+
 .Tags {
     display: flex;
     gap: 1em;
@@ -86,6 +102,34 @@
     scale: 1.1;
 }
 
+.Tag-Selector {
+    display: inline;
+    padding: 0em 7em;
+    margin: 5em 0;
+}
+
+.Tag-Selector h4 {
+    margin: 0 0 1em 0.25em;
+}
+
+.Tag-button {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    transition: all 0.2s;
+}
+
+.Tag-button.selected {
+    background-color: var(--secondary);
+    scale: 1.1;
+}
+
+.Tag-button:hover {
+    background-color: var(--secondary);
+}
+
 .Arrow-Button.expanded {
     transform: rotate(180deg);
 }
@@ -98,17 +142,35 @@
 
 @media (max-width: 800px) {
     .Projects-wrapper {
-        gap: 8em;
+        gap: 5em;
     }
 
     .Project {
         flex-direction: column;
         gap: 1em;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .Project img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+
+    .Arrow-Button img {
+        height: 2em;
     }
 
     .Arrow-Button {
-        align-self: flex-start;
+        transform: rotate(90deg);
     }
 
+    .Arrow-Button.expanded {
+        transform: rotate(270deg);
+    }
+
+    .Tag-Selector {
+        padding: 0em 0em;
+        margin: 0;
+    }
 }

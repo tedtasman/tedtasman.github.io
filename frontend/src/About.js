@@ -15,9 +15,13 @@ export function About() {
             <div className='Wrapper'>
                 <div className='Inner'>
                     <div className='About-wrapper'>
+                        <div style={{alignSelf: 'flex-start'}}>
+                            <h1>About Me</h1>
+                            <h5>My background, skills, and interests</h5>
+                        </div>
                         <div className='Content-entry-a'>
                             <div>
-                                <h3>About Me</h3>
+                                <h3>Background</h3>
                                 <p>
                                     I'm Ted Tasman, a Computer Science student at Penn State who is passionate about using technology to make a positive impact in the world. My journey in computer science has been driven by curiosity and a love for problem-solving, whether that's through building predictive models, developing web applications, or diving into systems programming. I'm always looking for opportunities to learn and grow, and I'm excited to see where my journey takes me next.
                                 </p>

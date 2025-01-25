@@ -116,6 +116,8 @@
     transition: all 0.2s;
     cursor: pointer;
     box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
+    text-decoration: none;
+    color: var(--text);
 }
 
 .Post-square:hover {

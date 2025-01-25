@@ -47,3 +47,26 @@
     text-decoration: underline;
 }
 
+
+@media (max-width: 1000px) {
+    .Footer-buttons {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .Page-category {
+        box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
+        width: 100%;
+        padding: 1em;
+        align-items: center;
+        border-radius: 1em;
+        background-color: var(--primaryFade);
+    }
+
+    .Footer-bg {
+        gap: 5em;
+        padding: 7em 0;
+    }
+
+}

@@ -128,10 +128,11 @@
 
 .Menu-buttons button {
     width: 75vw;
-    background-color: var(--accent);
-    color: var(--text);
+    background-color: var(--accentFade);
+    color: white;
     transition: all 0.2s;
     height: 5em;
+    box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
 }
 
 .Contact-div-menu {
@@ -152,6 +153,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
+    background-color: var(--accentFade);
 }
 
 .Contact-div-menu img {
