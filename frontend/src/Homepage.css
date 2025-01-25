@@ -36,6 +36,7 @@
     width: 100%;
     height: auto;
     border-radius: 1em;
+    
 }
 
 .Guide-wrapper {
@@ -113,9 +114,8 @@
     padding: 1em;
     justify-content: space-between;
     transition: all 0.2s;
-    border-color: black;
-    border-width: 1em;
     cursor: pointer;
+    box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
 }
 
 .Post-square:hover {
@@ -181,4 +181,5 @@
     .Intro {
         max-width: 100%;
     }
+
 }

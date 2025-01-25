@@ -17,48 +17,154 @@ export function About() {
                     <div className='About-wrapper'>
                         <div className='Content-entry-a'>
                             <div>
+                                <h3>About Me</h3>
                                 <p>
-                                    I'm Ted Tasman, a Computer Science student at Penn State who is passionate about using technology to make a positive impact in the world. My journey in tech has been driven by curiosity and a love for problem-solving, whether it’s through building predictive models or developing web applications.
+                                    I'm Ted Tasman, a Computer Science student at Penn State who is passionate about using technology to make a positive impact in the world. My journey in computer science has been driven by curiosity and a love for problem-solving, whether that's through building predictive models, developing web applications, or diving into systems programming. I'm always looking for opportunities to learn and grow, and I'm excited to see where my journey takes me next.
+                                </p>
+                                <p>
+                                    Aside from my studies, I enjoy spending time outdoors, whether that's hiking in the mountains, exploring national parks, or going cycling. I'm a big fan of music, and I love playing guitar and listening to a wide range of genres. 
                                 </p>
                             </div>
                             <div>
-                                <img src={yellowstoneMe} alt='Photo of me'/>
+                                <img src={yellowstoneMe} alt='Yellowstone National Park'/>
                                 <small>Yellowstone National Park, Wyoming</small>
                             </div>
                         </div>
                         <div className='Content-entry-b'>
                             <div>
-                                <img src={zion} alt='Photo of me'/>
+                                <img src={zion} alt='Zion National Park'/>
                                 <small>Zion National Park, Utah</small>
                             </div>
                             <div>
-                                Beyond the technical skills, I value the experiences that have shaped who I am today. Working in the food service industry taught me the importance of teamwork and communication, skills that are just as crucial in tech as they are in any other field. These experiences have underscored my commitment to collaboration and my ability to thrive in dynamic environments.
+                                <h3>Skills</h3>
+                                <p>
+                                    I have experience in a range of areas, and have utilized many programming languages and technologies to build projects and solve problems. I'm always seeking out opportunities to expand my skillset and learn new things, and I'm excited to continue growing as a developer and computer scientist. 
+                                </p>
+                                <p>
+                                I've divided my skills into three categories below; areas and concepts, programming languages, and software and technologies. Feel free to explore each category to learn more about my skills and experience.
+                                </p>
                             </div>
                         </div>
                         <div className='Content-entry-a'>
                             <div>
-                                I'm a firm believer in the transformative power of technology and am eager to apply my skills to projects that can drive meaningful change. Whether it’s through an internship, a collaborative project, or just connecting with like-minded individuals, I’m excited about the opportunities ahead.
+                                <h3>Areas & Concepts</h3>
+                                <ul>
+                                    <li>
+                                        Machine Learning
+                                        <small>
+                                            Deep Learning, Neural Networks
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Web Development
+                                        <small>
+                                            Frontend, Backend, Full Stack
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Systems Programming
+                                        <small>
+                                            Networking, Memory Management
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Operating Systems
+                                        <small>
+                                            Memory Management, Scheduling, Concurrency
+                                        </small>
+                                    </li>
+                                </ul>
                             </div>
                             <div>
-                                <img src={lizardRock} alt='Photo of me'/>
+                                <img src={lizardRock} alt='Lizard on a rock'/>
                                 <small>Joshua Tree National Park, California</small>
                             </div>
                         </div>
                         <div className='Content-entry-b'>
                             <div>
-                                <img src={oregon} alt='Photo of me'/>
+                                <img src={oregon} alt='Ted Tasman in front of a tent'/>
                                 <small>Somewhere in Oregon</small>
                             </div>
                             <div>
-                                Beyond the technical skills, I value the experiences that have shaped who I am today. Working in the food service industry taught me the importance of teamwork and communication, skills that are just as crucial in tech as they are in any other field. These experiences have underscored my commitment to collaboration and my ability to thrive in dynamic environments.
+                                <h3>Programming Languages</h3>
+                                <ul>
+                                    <li>
+                                        Python
+                                        <small>
+                                            Machine Learning, Object-Oriented Programming
+                                        </small>
+                                    </li>
+                                    <li>
+                                        JavaScript
+                                        <small>
+                                            Frontend, Backend
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Java
+                                        <small>
+                                            Object-Oriented Programming
+                                        </small>
+                                    </li>
+                                    <li>
+                                        C
+                                        <small>
+                                            Systems Programming, Operating Systems
+                                        </small>
+                                    </li>
+                                    <li>
+                                        SQL
+                                        <small>
+                                            Database Management
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Swift
+                                        <small>
+                                            iOS Development
+                                        </small>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className='Content-entry-a'>
                             <div>
-                                I'm a firm believer in the transformative power of technology and am eager to apply my skills to projects that can drive meaningful change. Whether it’s through an internship, a collaborative project, or just connecting with like-minded individuals, I’m excited about the opportunities ahead.
+                                <h3>Software & Technologies</h3>
+                                <ul>
+                                    <li>
+                                        TensorFlow
+                                        <small>
+                                            Machine Learning
+                                        </small>
+                                    </li>
+                                    <li>
+                                        React.js
+                                        <small>
+                                            Frontend Web Development
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Node.js
+                                        <small>
+                                            Backend Web Development
+                                        </small>
+                                    </li>
+                                    <li>
+                                        MySQL
+                                        <small>
+                                            Database Management
+                                        </small>
+                                    </li>
+                                    <li>
+                                        Git
+                                        <small>
+                                            Version Control
+                                        </small>
+                                    </li>
+                                </ul>
                             </div>
                             <div>
-                                <img src={yosemite} alt='Photo of me'/>
+                                <img src={yosemite} alt='Yosemite national park'/>
                                 <small>Yosemite National Park, California</small>
                             </div>
                         </div>
