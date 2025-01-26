@@ -4,6 +4,8 @@
     align-items: flex-start;
     gap: 4em;
     padding: 12vh 12vw;
+    box-shadow: 0 0 1em 0 var(--text) inset;
+
 }
 
 .Project {
@@ -96,6 +98,7 @@
     height: 2em;
     width: 2em;
     object-fit: cover;
+    border-radius: 0;
 }
 
 .Arrow-Button:hover {
@@ -137,6 +140,8 @@
 @media (max-width: 1000px) {
     .Projects-wrapper {
         padding: 4vh 4vw;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 

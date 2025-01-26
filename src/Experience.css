@@ -4,6 +4,8 @@
     align-items: flex-start;
     gap: 3em;
     padding: 12vh 12vw;
+    box-shadow: 0 0 1em 0 var(--text) inset;
+
 }
 
 .Job-entry {
