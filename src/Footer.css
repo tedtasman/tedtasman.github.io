@@ -10,10 +10,12 @@
     justify-content: center;
     gap: 5em;
     padding: 7em 0;
+    display: none;
 }
 
 .Footer-bg.expanded {
     height: 35vh;
+    display: flex;
 }
 
 .Footer-buttons {

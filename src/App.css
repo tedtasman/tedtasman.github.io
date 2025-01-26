@@ -88,3 +88,14 @@
         padding: 2em;
     }
 }
+
+@media (max-width: 800px) {
+
+    .Welcome {
+        padding: 0 5em;
+    }
+
+    .Welcome h1 {
+        font-size: 3.158rem;
+    }
+}

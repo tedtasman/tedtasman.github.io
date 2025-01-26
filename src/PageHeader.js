@@ -1,6 +1,7 @@
 import './App.css';
 import './Header.css'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export function Header({ className }) {
     const [expandMenu, setExpandMenu] = useState(false);
@@ -9,19 +10,19 @@ export function Header({ className }) {
     return (
         <>
             <div className={className}>
-                <a href='/' style={{ textDecoration: 'none' }}>
+                <Link to='/' style={{ textDecoration: 'none' }}>
                     <h3 className='Title'>Ted Tasman</h3>
-                </a>
+                </Link>
                 <div className='Page-buttons'>
-                    <a href='/about'>
+                    <Link to='/about'>
                         <button>About Me</button>
-                    </a>
-                    <a href='/experience'>
+                    </Link>
+                    <Link to='/experience'>
                         <button>Experience</button>
-                    </a>
-                    <a href='/projects'>
+                    </Link>
+                    <Link to='/projects'>
                         <button>Projects</button>
-                    </a>
+                    </Link>
                 </div>
                 <div className='Contact-div'>
                     <a href='mailto:contact@ttasman.com'>
