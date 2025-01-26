@@ -95,8 +95,7 @@
 .Arrow-Button img {
     height: 2em;
     width: 2em;
-    border-radius: 0;
-    box-sizing: border-box;
+    object-fit: cover;
 }
 
 .Arrow-Button:hover {
@@ -150,6 +149,7 @@
         flex-direction: column;
         gap: 1em;
         align-items: center;
+        width: 100%;
     }
 
     .Project img {
@@ -160,6 +160,7 @@
 
     .Arrow-Button img {
         height: 2em;
+        width: 2em;
     }
 
     .Arrow-Button {
