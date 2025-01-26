@@ -4,7 +4,7 @@ import { Footer } from './PageFooter';
 import './Projects.css';
 import React, { useState } from 'react';
 
-export function Projects() {
+export default function Projects() {
     const [expandedProjects, setExpandedProjects] = useState({});
 
     const toggleExpand = (title) => {

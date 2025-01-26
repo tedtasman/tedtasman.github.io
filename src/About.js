@@ -8,7 +8,7 @@ import oregon from './content/oregon.jpeg';
 import yosemite from './content/yosemite.jpeg';
 import './About.css';
 
-export function About() {
+export default function About() {
     return (
         <div style={{ display: 'flex' , flexDirection: 'column'}}>
             <Header className='Header-bg expanded'/>

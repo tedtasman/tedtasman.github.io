@@ -4,7 +4,7 @@ import { Footer } from './PageFooter';
 import './Experience.css';
 import React, { useState } from 'react';
 
-export function Experience() {
+export default function Experience() {
 
     const [expandWork, setExpandWork] = useState(true);
     const [expandEducation, setExpandEducation] = useState(true);

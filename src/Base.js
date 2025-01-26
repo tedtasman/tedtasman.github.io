@@ -4,7 +4,7 @@ import { Footer } from './PageFooter.js';
 import { Homepage } from './Homepage.js';
 import React, { useState, useEffect } from 'react';
 
-export function Base() {
+export default function Base() {
 
     const [welcome, setWelcome] = useState(false);
     const [fadeOut, setFadeOut] = useState(false);
