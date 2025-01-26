@@ -3,7 +3,7 @@ import Base from './Base';
 import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export default function App() {
 
