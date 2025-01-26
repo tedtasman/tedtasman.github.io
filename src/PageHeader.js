@@ -52,15 +52,15 @@ export function Header({ className }) {
                     </a>
                 </div>
                 <div className='Menu-buttons'>
-                    <a href='/about'>
+                    <Link to='/about'>
                         <button>About Me</button>
-                    </a>
-                    <a href='/experience'>
+                    </Link>
+                    <Link to='/experience'>
                         <button>Experience</button>
-                    </a>
-                    <a href='/projects'>
+                    </Link>
+                    <Link to='/projects'>
                         <button>Projects</button>
-                    </a>
+                    </Link>
                 </div> 
             </div>
         </>
