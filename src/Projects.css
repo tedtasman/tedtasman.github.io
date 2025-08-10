@@ -1,183 +1,198 @@
 .Projects-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4em;
-    padding: 12vh 12vw;
-    box-shadow: 0 0 1em 0 var(--text) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0em;
+  padding: 12vh 12vw;
+  box-shadow: 0 0 1em 0 var(--text) inset;
+}
 
+.Projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  width: 100%;
 }
 
 .Project {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    align-items: flex-end;
-    width: 100%;
-    justify-content: flex-start;
-    padding: 1em;
-    background-color: transparent;
-    text-align: justify;
-    box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
-    border-radius: 1.5em;
-    color: var(--text)
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1em;
+  background-color: transparent;
+  text-align: justify;
+  box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
+  border-radius: 1.5em;
+  color: var(--text);
 }
 
 .Project img {
-    height: 30vh;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 1em;
-    box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 1em;
+  box-sizing: border-box;
 }
 
 .Description {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-bottom: 1em;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+  text-align: left;
 }
 
 .Description.expanded {
-    display: none;
+  display: none;
 }
 
 .Expanded-Content {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .Expanded-Content p {
-    margin: 0;
+  margin: 0;
 }
 
 .Expanded-Content a {
-    color: var(--secondary);
-    background-color: var(--primary);
-    width: fit-content;
-    padding: 0.7em;
-    border-radius: 1.5em;
+  color: var(--secondary);
+  background-color: var(--primary);
+  width: fit-content;
+  padding: 0.7em;
+  border-radius: 1.5em;
 }
 
 .Project-Detail {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    align-items: center;
-}
-
-.Project-Detail a {
-    text-align: center;
-    transition: all 0.2s;
-}
-
-.Project-Detail a:hover {
-    transform: scale(1.1);
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
 }
 
 .Tags {
-    display: flex;
-    gap: 1em;
-    color: var(--textFade);
+  display: flex;
+  gap: 1em;
+  color: var(--textFade);
+  flex-wrap: wrap;
 }
 
 .Arrow-Button {
-    background-color: transparent;
-    transition: all 0.2s;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: fit-content;
-    padding: 0;
-    align-self: center;
+  background-color: transparent;
+  transition: all 0.2s;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: fit-content;
+  padding: 0;
+  align-self: center;
 }
 
 .Arrow-Button img {
-    height: 2em;
-    width: 2em;
-    object-fit: cover;
-    border-radius: 0;
+  height: 2em;
+  width: 2em;
+  object-fit: cover;
+  border-radius: 0;
 }
 
 .Arrow-Button:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .Tag-Selector {
-    display: inline;
-    padding: 0em 7em;
-    margin: 5em 0;
+  display: inline;
+  padding: 0em 7em;
+  margin: 5em 0;
 }
 
 .Tag-Selector h4 {
-    margin: 0 0 1em 0.25em;
+  margin: 0 0 1em 0.25em;
 }
 
 .Tag-button {
-    background-color: var(--primary);
-    color: white;
-    border-radius: 1em;
-    padding: 0.5em 1em;
-    margin: 0.5em;
-    transition: all 0.2s;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  transition: all 0.2s;
 }
 
 .Tag-button.selected {
-    background-color: var(--secondary);
-    scale: 1.1;
+  background-color: var(--secondary);
+  scale: 1.1;
 }
 
 .Tag-button:hover {
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .Arrow-Button.expanded {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-@media (max-width: 1000px) {
-    .Projects-wrapper {
-        padding: 4vh 4vw;
-        width: 100%;
-        box-sizing: border-box;
-    }
+.Learn-more {
+  color: var(--secondary);
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Projects-wrapper {
+    padding: 4vh 4vw;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 800px) {
-    .Projects-wrapper {
-        gap: 5em;
-    }
+  .Projects-wrapper {
+    gap: 5em;
+  }
 
-    .Project {
-        flex-direction: column;
-        gap: 1em;
-        align-items: center;
-        width: 100%;
-    }
+  .Projects-list {
+    grid-template-columns: 1fr;
+  }
 
-    .Project img {
-        width: 100%;
-        aspect-ratio: 1/1;
-        height: auto;
-    }
+  .Project {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+  }
 
-    .Arrow-Button img {
-        height: 2em;
-        width: 2em;
-    }
+  .Project img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+  }
 
-    .Arrow-Button {
-        transform: rotate(90deg);
-    }
+  .Arrow-Button img {
+    height: 2em;
+    width: 2em;
+  }
 
-    .Arrow-Button.expanded {
-        transform: rotate(270deg);
-    }
+  .Arrow-Button {
+    transform: rotate(90deg);
+  }
 
-    .Tag-Selector {
-        padding: 0em 0em;
-        margin: 0;
-    }
+  .Arrow-Button.expanded {
+    transform: rotate(270deg);
+  }
+
+  .Tag-Selector {
+    padding: 0em 0em;
+    margin: 0;
+  }
 }

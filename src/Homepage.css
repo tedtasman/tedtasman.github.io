@@ -1,187 +1,185 @@
 .Homepage-wrapper {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
-    padding: 12vh 12vw;
-    gap: 7em;
-    box-shadow: 0 0 1em 0 var(--text) inset;
-    border-radius: 1em;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding: 12vh 12vw;
+  gap: 7em;
+  box-shadow: 0 0 1em 0 var(--text) inset;
+  border-radius: 1em;
 }
 
 .Homepage-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-height: 100%;
 }
 
 .Homepage-column h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .Intro {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    max-width: 30vw;
-    margin-bottom: 5em;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 30vw;
+  margin-bottom: 5em;
+  text-align: left;
 }
 
 .Intro p {
-    text-align: justify;
-    margin: 0;
+  text-align: justify;
+  margin: 0;
 }
 
 .Landing-image {
-    width: 100%;
-    height: auto;
-    border-radius: 1em;
-    
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
 }
 
 .Guide-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "guide1 guide2 guide2"
-        "guide3 guide2 guide2";
-    gap: 1em;
-    height: 100%;
-    margin-bottom: 6em;
-    margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "guide1 guide2 guide2"
+    "guide3 guide2 guide2";
+  gap: 1em;
+  height: 100%;
+  margin-bottom: 6em;
+  margin-top: 1em;
 }
 
-.guide1, .guide2, .guide3 {
-    padding: 2em 2em;
-    border-radius: 1em;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-items: start;
-    text-align: justify;
+.guide1,
+.guide2,
+.guide3 {
+  padding: 2em 2em;
+  border-radius: 1em;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  text-align: left;
 }
 
 .guide1 {
-    background-color: var(--text);
-    grid-area: guide1;
-    color: var(--background);
+  background-color: var(--text);
+  grid-area: guide1;
+  color: var(--background);
 }
 
 .guide2 {
-    background-color: var(--primary);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    grid-area: guide2;
-    color: var(--background);
-    align-items: start;
-    justify-content: center;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  grid-area: guide2;
+  color: var(--background);
+  align-items: start;
+  justify-content: center;
 }
 
 .guide2 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .List-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .guide3 {
-    background-color: var(--secondary);
-    grid-area: guide3;
+  background-color: var(--secondary);
+  grid-area: guide3;
 }
 
 .Post-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
-    gap: 2em;
-    margin-top: 2em
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  gap: 2em;
+  margin-top: 2em;
 }
 
 .Post-square {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 1em;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    padding: 1em;
-    justify-content: space-between;
-    transition: all 0.2s;
-    cursor: pointer;
-    box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
-    text-decoration: none;
-    color: var(--text);
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 1em;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em;
+  justify-content: space-between;
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
+  text-decoration: none;
+  color: var(--text);
 }
 
 .Post-square:hover {
-    background-color: var(--accent);
-    transform: scale(1.02);
-    box-shadow: 0 0 3em 0.5em var(--accent);
+  background-color: var(--accent);
+  transform: scale(1.02);
+  box-shadow: 0 0 3em 0.5em var(--accent);
 }
 
 .Post-square .image-container {
-    position: relative;
-    width: 100%;
-    padding-top: 100%;
-    border-radius: 1em;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 1em;
+  overflow: hidden;
 }
 
 .Post-square .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Post-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: left;
 }
 
 .Post-content p {
-    margin: 0;
+  margin: 0;
 }
 
 .Post-content span {
-    color: var(--textFade);
+  color: var(--textFade);
 }
 
-
 @media (max-width: 1200px) {
+  .Homepage-wrapper {
+    grid-template-columns: 7fr 4fr;
+    padding: 4vh 4vw;
+    gap: 3em;
+  }
 
-    .Homepage-wrapper {
-        grid-template-columns: 7fr 4fr;
-        padding: 4vh 4vw;
-        gap: 3em;
-    }
-
-    .Guide-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+  .Guide-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 800px) {
+  .Homepage-wrapper {
+    grid-template-columns: 1fr;
+    padding: 4vh 4vw;
+    gap: 3em;
+  }
 
-    .Homepage-wrapper {
-        grid-template-columns: 1fr;
-        padding: 4vh 4vw;
-        gap: 3em;
-    }
-
-    .Intro {
-        max-width: 100%;
-    }
-
+  .Intro {
+    max-width: 100%;
+  }
 }
