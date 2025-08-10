@@ -58,4 +58,15 @@
     padding: 60px 40px;
     justify-content: center;
   }
+
+  .modal-header {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
 }
