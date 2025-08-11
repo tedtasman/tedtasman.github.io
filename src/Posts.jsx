@@ -6,7 +6,7 @@ export function Posts() {
     {
       title: "MAVez",
       content:
-        "A web application designed to streamline the process of managing and visualizing data from various sources.",
+        "A package published on PyPI for simplifying programmatic drone operations.",
       image_data: "/mavez.png",
       created_at: "2025-08-10T13:54:37.000Z",
       link: "https://github.com/UnmannedAerialSystems/MAVez",
