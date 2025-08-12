@@ -1,74 +1,73 @@
 .Footer-bg {
-    background-color: var(--text);
-    overflow: hidden;
-    height: 0;
-    transition: all 0.5s;
-    color: var(--background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5em;
-    padding: 7em 0;
-    display: none;
+  background-color: var(--text);
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s;
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  padding: 7em 0;
+  display: none;
 }
 
 .Footer-bg.expanded {
-    height: 35vh;
-    display: flex;
+  height: 35vh;
+  display: flex;
 }
 
 .Footer-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
 }
 
 .Page-category {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: auto;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: auto;
+  align-items: flex-start;
 }
 
 .Page-category h5 {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 .Page-category button {
-    padding: 0;
-    width: auto;
-    color: var(--background);
-    background-color: transparent;
-    transition: all 0.3s;
+  padding: 0;
+  width: auto;
+  color: var(--background);
+  background-color: transparent;
+  transition: all 0.3s;
 }
 
 .Page-category button:hover {
-    transform: scale(1.1);
-    text-decoration: underline;
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
-
 @media (max-width: 1000px) {
-    .Footer-buttons {
-        flex-direction: column;
-        gap: 2em;
-        align-items: center;
-    }
+  .Footer-buttons {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
 
-    .Page-category {
-        box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
-        width: 100%;
-        padding: 1em;
-        align-items: center;
-        border-radius: 1em;
-        background-color: var(--primaryFade);
-    }
+  .Page-category {
+    box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
+    width: 100%;
+    padding: 1em;
+    align-items: center;
+    border-radius: 1em;
+    background-color: var(--primaryFade);
+  }
 
-    .Footer-bg {
-        gap: 5em;
-        padding: 7em 0;
-    }
-
+  .Footer-bg.expanded {
+    gap: 5em;
+    padding: 7em 0;
+    height: fit-content;
+  }
 }

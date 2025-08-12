@@ -183,6 +183,7 @@
 @media (max-width: 800px) {
   .Projects-wrapper {
     gap: 5em;
+    padding: 4vh 6vw;
   }
 
   .Projects-list {

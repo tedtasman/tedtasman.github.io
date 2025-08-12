@@ -180,7 +180,7 @@
 @media (max-width: 800px) {
   .Homepage-wrapper {
     grid-template-columns: 1fr;
-    padding: 4vh 4vw;
+    padding: 4vh 6vw;
     gap: 3em;
   }
 
