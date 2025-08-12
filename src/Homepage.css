@@ -36,6 +36,7 @@
   width: 100%;
   height: auto;
   border-radius: 1em;
+  box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
 }
 
 .Guide-wrapper {
@@ -64,6 +65,7 @@
   align-items: center;
   justify-items: start;
   text-align: left;
+  box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
 }
 
 .guide1 {
@@ -119,12 +121,15 @@
   box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
   text-decoration: none;
   color: var(--text);
+  background-color: var(--accentFade);
 }
 
 .Post-square:hover {
   background-color: var(--accent);
-  transform: scale(1.02);
-  box-shadow: 0 0 3em 0.5em var(--accent);
+}
+
+.Post-square:active {
+  box-shadow: inset 0em 0em 0.5em 0em var(--textFade);
 }
 
 .Post-square .image-container {

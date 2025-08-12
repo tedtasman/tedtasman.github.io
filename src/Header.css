@@ -64,9 +64,14 @@
 
 .Contact-div a:hover,
 .Page-buttons button:hover {
+  background-color: var(--text);
+  box-shadow: 0 0 0.5em 0 var(--text);
+}
+
+.Contact-div a:active,
+.Page-buttons button:active {
   background-color: var(--secondary);
-  color: var(--text);
-  box-shadow: 0 0 3em 0 var(--secondary);
+  box-shadow: inset 0 0 0.5em 0 var(--textFade);
 }
 
 .Contact-div img {
@@ -110,26 +115,31 @@
 } */
 
 .Menu.expanded {
-  height: 60vh;
   padding: 3em 1em;
+  height: 60vh;
 }
 
 .Menu-buttons {
-  width: 75vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
-  gap: 2em;
   justify-content: center;
   align-items: center;
+  border-top: 0.1em solid var(--background);
 }
 
 .Menu-buttons button {
-  width: 75vw;
-  background-color: var(--accentFade);
-  color: white;
+  width: 90vw;
+  border-radius: 0;
+  background-color: transparent;
   transition: all 0.2s;
   height: 5em;
-  box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
+  border-bottom: 0.1em solid var(--background);
+  color: var(--background);
+
+  &:active {
+    background-color: var(--text);
+  }
 }
 
 .Contact-div-menu {
@@ -150,8 +160,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 1em;
-  box-shadow: 0.1em 0.1em 0.5em 0em rgba(0, 0, 0, 0.77);
-  background-color: var(--accentFade);
+
+  &:active {
+    background-color: var(--text);
+  }
 }
 
 .Contact-div-menu img {

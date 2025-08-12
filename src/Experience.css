@@ -5,12 +5,16 @@
   gap: 2em;
   padding: 12vh 12vw;
   box-shadow: 0 0 1em 0 var(--text) inset;
+  border-radius: 1em;
 }
 
 .Job-entry {
   display: flex;
   flex-direction: row;
   gap: 2em;
+  padding: 2em;
+  border-radius: 1em;
+  box-sizing: border-box;
 }
 
 .Job-entry img {
@@ -30,18 +34,30 @@
 .Experience-category {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 0.5em;
   max-height: fit-content;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s, margin-bottom 0.1s linear;
   margin-bottom: 0;
+
+  .Job-entry {
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
 }
 
 .Experience-category.expanded {
   max-height: 1000px;
   /* margin-bottom: 7em; */
-  gap: 6em;
+  gap: 2em;
+  overflow: visible;
+
+  .Job-entry {
+    box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
+    background-color: var(--accentFade);
+    opacity: 1;
+  }
 }
 
 .Experience-category-header {

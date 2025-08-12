@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Modal.css";
 
 interface ModalProps {
@@ -14,26 +14,38 @@ export default function Modal({
   title,
   children,
 }: ModalProps) {
+  const [showModal, setShowModal] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
+
   useEffect(() => {
+    let timeout: NodeJS.Timeout;
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      setShouldRender(true);
+      setShowModal(true);
     } else {
-      document.body.style.overflow = "unset";
+      setShowModal(false);
+      timeout = setTimeout(() => {
+        setShouldRender(false);
+        onClose();
+      }, 500);
     }
+    return () => clearTimeout(timeout);
+  }, [isOpen, onClose]);
 
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen]);
-
-  if (!isOpen) return null;
+  if (!shouldRender) return null;
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div
+      className={`modal-overlay ${showModal ? "" : "hidden"}`}
+      onClick={() => setShowModal(false)}
+    >
+      <div
+        className={`modal-content ${showModal ? "" : "hidden"}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="modal-header">
           <h2>{title}</h2>
-          <button className="close-button" onClick={onClose}>
+          <button className="close-button" onClick={() => setShowModal(false)}>
             &times;
           </button>
         </div>

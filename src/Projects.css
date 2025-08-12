@@ -5,6 +5,7 @@
   gap: 0em;
   padding: 12vh 12vw;
   box-shadow: 0 0 1em 0 var(--text) inset;
+  border-radius: 1em;
 }
 
 .Projects-list {
@@ -22,11 +23,20 @@
   width: 100%;
   justify-content: flex-start;
   padding: 1em;
-  background-color: transparent;
+  background-color: var(--accentFade);
   text-align: justify;
   box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
   border-radius: 1.5em;
   color: var(--text);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--accent);
+  }
+
+  &:active {
+    box-shadow: inset 0em 0em 0.5em 0em var(--textFade);
+  }
 }
 
 .Project img {
@@ -120,15 +130,29 @@
   padding: 0.5em 1em;
   margin: 0.5em;
   transition: all 0.2s;
+  box-shadow: 0 0 0.5em 0 var(--textFade);
 }
 
 .Tag-button.selected {
   background-color: var(--secondary);
-  scale: 1.1;
+  color: var(--text);
+  box-shadow: inset 0 0 0.5em 0 var(--textFade);
+}
+
+.Tag-button.selected:hover {
+  background-color: var(--secondaryFade);
+  color: var(--text);
 }
 
 .Tag-button:hover {
+  background-color: var(--primaryFade);
+  color: var(--text);
+}
+
+.Tag-button:active {
   background-color: var(--secondary);
+  color: var(--text);
+  box-shadow: inset 0 0 0.5em 0 var(--textFade);
 }
 
 .Arrow-Button.expanded {
