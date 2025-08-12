@@ -16,9 +16,9 @@ export function Homepage() {
             </h3>
           </div>
           <p>
-            I'm passionate about leveraging technology to create a positive
-            impact on the world. My mission is to provide tangible value to
-            users through innovative and practical solutions.
+            I love using technology to make a real difference. My goal is to
+            build tools and solutions that people find genuinely useful: things
+            that are creative, practical, and make life a little easier.
           </p>
         </div>
 

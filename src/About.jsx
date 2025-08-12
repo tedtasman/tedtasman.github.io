@@ -22,21 +22,23 @@ export default function About() {
               <div>
                 <h3>Background</h3>
                 <p>
-                  Ted Tasman is a Computer Science student at Penn State with a
-                  passion for using technology to make a positive impact. Driven
-                  by curiosity and a love for problem-solving, he thrives on
-                  tackling challenges, whether developing predictive models,
-                  building web applications, or exploring the intricacies of
-                  systems programming. Ted actively seeks opportunities to
-                  learn, grow, and apply his skills in meaningful ways, always
-                  eager to see where the next project will lead.
+                  Ted Tasman is a Computer Science student at Penn State who
+                  loves exploring how technology can be used in creative,
+                  meaningful ways. Fueled by curiosity and a knack for problem
+                  solving, he dives into challenges. Whether it's developing
+                  predictive models, crafting web applications, or getting hands
+                  on with low level systems programming. A lifelong fascination
+                  with aviation and space has also led Ted to explore aerospace
+                  projects, combining his passion for flight with his skills in
+                  software and engineering. He's always looking for the next
+                  idea to chase, eager to learn, build, and see how far an idea
+                  can go.
                 </p>
                 <p>
-                  Outside of academics, Ted enjoys time in the outdoors, hiking
-                  mountain trails, exploring national parks, and cycling
-                  whenever he can. He's also an avid music enthusiast, playing
-                  guitar and appreciating genres that span from acoustic to
-                  experimental.
+                  When he's not coding, Ted enjoys hiking mountain trails,
+                  exploring national parks, and cycling just to see where the
+                  road leads. He's also an avid movie fan, especially when it
+                  comes to science fiction and thought provoking films.
                 </p>
               </div>
               <div>
@@ -88,8 +90,8 @@ export default function About() {
                 <h3>Software & Technologies</h3>
                 <ul>
                   <li>
-                    TensorFlow, PyTorch
-                    <small>Machine Learning</small>
+                    TensorFlow, PyTorch, OpenCV
+                    <small>AI & Machine Learning</small>
                   </li>
                   <li>
                     Kafka, Confluent, KSQLDB, SQLite
@@ -124,8 +126,10 @@ export default function About() {
                 <h3>Areas & Concepts</h3>
                 <ul>
                   <li>
-                    Machine Learning
-                    <small>Deep Learning, Neural Networks</small>
+                    AI & Machine Learning
+                    <small>
+                      Deep Learning, Neural Networks, Computer Vision
+                    </small>
                   </li>
                   <li>
                     Web Development
