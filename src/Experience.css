@@ -48,7 +48,7 @@
 }
 
 .Experience-category.expanded {
-  max-height: 1000px;
+  max-height: 5000px;
   /* margin-bottom: 7em; */
   gap: 2em;
   overflow: visible;
@@ -112,6 +112,6 @@
   }
 
   .Experience-category.expanded {
-    max-height: 1500px;
+    max-height: 5000px;
   }
 }
