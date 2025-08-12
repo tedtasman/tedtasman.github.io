@@ -2,7 +2,7 @@ import "./App.jsx";
 import { Header } from "./PageHeader.jsx";
 import { Footer } from "./PageFooter.jsx";
 import "./Projects.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "./Modal.tsx";
 
 export default function Projects() {
@@ -17,6 +17,10 @@ export default function Projects() {
   };
 
   const [selection, setSelection] = useState([]);
+
+  useEffect(() => {
+    console.log("Selected Project: ", selectedProject);
+  }, [selectedProject]);
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
