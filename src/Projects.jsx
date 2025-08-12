@@ -18,10 +18,6 @@ export default function Projects() {
 
   const [selection, setSelection] = useState([]);
 
-  useEffect(() => {
-    console.log("Selected Project: ", selectedProject);
-  }, [selectedProject]);
-
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Header className="Header-bg expanded" />
