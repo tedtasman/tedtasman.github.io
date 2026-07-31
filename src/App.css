@@ -64,6 +64,7 @@
 
 .Begin-button {
   width: auto;
+  color: var(--text);
   background-color: var(--background);
   transition: all 0.2s;
 }
@@ -72,6 +73,11 @@
   box-shadow: 0 0 3em 0 var(--background);
   margin-bottom: 0.2em;
   margin-top: -0.2em;
+}
+
+.Begin-button:active {
+  background-color: var(--secondary);
+  box-shadow: 0 0 3em 0 var(--secondary);
 }
 
 .Inner {
