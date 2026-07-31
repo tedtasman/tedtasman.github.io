@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Urbanist:700|Urbanist:500");
 
 :root {
-  --text: #07133b;
-  --background: #fffae5;
-  --primary: #0f267b;
-  --secondary: #77daaf;
-  --accent: #5fc4dd;
+  --text: #031c10;
+  --textLight: #fdfbf5;
+  --background: #fffdf6;
+  --primary: #355841;
+  --secondary: #77daa5;
+  --accent: #383023;
+  --accent2: #3d8261;
   --backgroundFade: rgba(255, 250, 229, 0.3);
-  --primaryFade: rgba(15, 38, 123, 0.2);
+  --primaryFade: rgba(41, 113, 65, 0.2);
   --secondaryFade: rgba(119, 218, 175, 0.3);
-  --accentFade: rgba(95, 196, 221, 0.3);
-  --textFade: rgba(5, 13, 38, 0.6);
+  --accentFade: rgba(91, 70, 45, 0.3);
+  --textFade: rgba(5, 38, 5, 0.6);
 }
 
 body {
   font-family: "Urbanist";
   font-weight: 500;
-  text-align: justify;
 }
 
 @media (max-width: 1000px) {

@@ -6,32 +6,38 @@
   padding: 12vh 12vw;
   box-shadow: 0 0 1em 0 var(--text) inset;
   border-radius: 1em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .Projects-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1em;
   width: 100%;
 }
 
 .Project {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
   align-items: center;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1em;
-  background-color: var(--accentFade);
+  background-color: var(--accent);
   text-align: justify;
   box-shadow: 0.1em 0.1em 0.5em 0em var(--textFade);
   border-radius: 1.5em;
-  color: var(--text);
+  color: var(--textLight);
   transition: all 0.2s ease;
 
+  h4 {
+    color: var(--secondary);
+  }
+
   &:hover {
-    background-color: var(--accent);
+    background-color: var(--primary);
   }
 
   &:active {
@@ -53,6 +59,7 @@
   gap: 1em;
   margin-bottom: 1em;
   text-align: left;
+  width: 100%;
 }
 
 .Description.expanded {
@@ -86,9 +93,20 @@
 
 .Tags {
   display: flex;
-  gap: 1em;
-  color: var(--textFade);
+  gap: 0.5em;
+  color: var(--background);
   flex-wrap: wrap;
+  width: 100%;
+
+  small {
+    background-color: var(--secondaryFade);
+    height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5em;
+    border-radius: 0.75em;
+  }
 }
 
 .Arrow-Button {

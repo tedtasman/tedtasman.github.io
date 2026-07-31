@@ -68,13 +68,13 @@
 }
 
 .guide1 {
-  background-color: var(--text);
+  background-color: var(--primary);
   grid-area: guide1;
   color: var(--background);
 }
 
 .guide2 {
-  background-color: var(--primary);
+  background-color: var(--accent);
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -93,7 +93,8 @@
 }
 
 .guide3 {
-  background-color: var(--secondary);
+  background-color: var(--accent2);
+  color: var(--background);
   grid-area: guide3;
 }
 
@@ -125,6 +126,11 @@
 
 .Post-square:hover {
   background-color: var(--accent);
+  color: var(--textLight);
+
+  span {
+    color: var(--background);
+  }
 }
 
 .Post-square:active {
@@ -161,6 +167,7 @@
 
 .Post-content span {
   color: var(--textFade);
+  transition: all 0.2s;
 }
 
 @media (max-width: 1200px) {

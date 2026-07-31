@@ -52,7 +52,7 @@ export default function Projects() {
         </Modal>
         <div className="Inner">
           <div className="Projects-wrapper">
-            <div>
+            <div className="Projects-header">
               <h1>Projects</h1>
               <h5>My recent projects and work</h5>
             </div>
@@ -60,7 +60,7 @@ export default function Projects() {
             {renderProjects(
               selection.length ? selection : tags,
               expandedProjects,
-              setSelectedProject
+              setSelectedProject,
             )}
           </div>
         </div>
@@ -98,7 +98,7 @@ const renderProjects = (selectedTags, expandedProjects, setSelectedProject) => {
     <div className="Projects-list">
       {Object.entries(projects)
         .filter(([, project]) =>
-          project.tags.some((tag) => selectedTags.includes(tag))
+          project.tags.some((tag) => selectedTags.includes(tag)),
         )
         .map(([title, project]) => {
           const projectImage = `/${project.image}`;
@@ -111,13 +111,13 @@ const renderProjects = (selectedTags, expandedProjects, setSelectedProject) => {
             >
               <img src={projectImage} alt={title} />
               <div className={`Description`}>
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                 <h5>{project.subtitle}</h5>
 
                 <div className="Date">{project.date}</div>
                 <div className="Tags">
                   {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
+                    <small key={tag}>{tag}</small>
                   ))}
                 </div>
               </div>
